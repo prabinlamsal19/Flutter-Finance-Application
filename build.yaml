@@ -1,0 +1,15 @@
+targets:
+  $default:
+    sources:
+      - "lib/**"
+      - "lib/graphql_stock/data/models/stock_model.dart"
+      - "lib/config/routes/routes_imports.dart"
+    builders:
+      hive_generator|hive_generator:
+        enabled: true
+        options:
+          build_extensions: { ".dart": ["lib/graphql_stock/data/models/*.g.dart"] }
+      auto_route_generator|autoRouteGenerator:
+        enabled: true
+        options:
+          output: "lib/config/routes/autoroute.g.dart"
