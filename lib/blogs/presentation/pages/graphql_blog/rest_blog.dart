@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
-import '../widgets/blog_row.dart';
+import '../../widgets/blog_row.dart';
 
 final HttpLink httpLink = HttpLink(
     "https://api-us-west-2.hygraph.com/v2/cli3zhipf1sr301t7fqtq2ick/master");

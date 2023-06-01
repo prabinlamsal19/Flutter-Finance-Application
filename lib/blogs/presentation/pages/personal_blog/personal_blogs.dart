@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../data/models/blog_model.dart';
-import '../../data/repositories/sqlite_service.dart';
-import '../widgets/personal_blog_row.dart';
+import '../../../data/models/blog_model.dart';
+import '../../../data/repositories/sqlite_service.dart';
+import '../../widgets/personal_blog_row.dart';
 import 'add_personal_blog_page.dart';
 
 class PersonalBlogPage extends StatefulWidget {
@@ -51,7 +51,8 @@ class PersonalBlogPageState extends State<PersonalBlogPage> {
                 return PersonalBlogRow(
                     title: _blogs[index].title,
                     excerpt: _blogs[index].content,
-                    coverURL: _blogs[index].image!);
+                    coverURL:
+                        _blogs[index].image ?? Image.asset("assets/bgg.jpeg"));
               },
             ),
           ),

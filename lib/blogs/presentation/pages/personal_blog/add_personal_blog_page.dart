@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // import 'package:image_picker_web/image_picker_web.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../../data/models/blog_model.dart';
+import '../../../data/models/blog_model.dart';
 
 class AddPersonalBlogPage extends StatefulWidget {
   const AddPersonalBlogPage({Key? key}) : super(key: key);
@@ -18,19 +18,12 @@ class AddPersonalBlogPageState extends State<AddPersonalBlogPage> {
   Image? _selectedImage;
 
   Future<void> _selectImage() async {
-    // Image? fromPicker = await ImagePickerWeb.getImageAsWidget();
-    // setState(() {
-    //   _selectedImage = fromPicker;
-    // });
     final ImagePicker picker = ImagePicker();
-    final LostDataResponse response = await picker.retrieveLostData();
-    if (response.isEmpty) {
-      return;
-    }
-    final List<XFile>? files = response.files;
+    final XFile? files = await picker.pickImage(source: ImageSource.gallery);
     if (files != null) {}
-
-    _selectedImage = Image.asset("assets/bgg.jpeg");
+    setState(() {
+      _selectedImage = Image.file(File(files?.path ?? "assets/bgg.jpeg"));
+    });
   }
 
   @override

@@ -1,21 +1,19 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
 import '../../data/models/chart_model.dart';
 
 part 'chart_event.dart';
 part 'chart_state.dart';
 
 class ChartBloc extends Bloc<ChartEvent, ChartState> {
-  ChartBloc() : super(ChartInitialState()) {
-    on<ChartEvent>((event, emit) {
-      emit(ChartInitialState());
-    }); 
+  //initialize the list
+  List<PieChartData> PieChartList = [];
 
-    on<AddChartEvent>(  
-      (event,emit){ 
-        emit(AddChartState(data: event.data));
-      }
-    );
+  ChartBloc() : super(ChartInitialState()) {
+    on<AddChartEvent>((event, emit) {
+      PieChartList.add(event.pieData);
+      emit(AddChartState(data: PieChartList));
+      print("AddChartState emitted");
+    });
   }
 }

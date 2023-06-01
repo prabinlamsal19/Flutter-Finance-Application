@@ -80,6 +80,8 @@ dev_dependencies:
   get:
   syncfusion_flutter_charts:
   hive_generator:
+  flutter_riverpod:
+  bloc_test:
   # image_picker_web:
 
 # For information on the generic Dart part of this file, see the

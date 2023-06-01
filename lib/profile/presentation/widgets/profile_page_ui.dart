@@ -50,7 +50,6 @@ class _ProfileUIState extends State<ProfileUI> {
                   if (profileModel == null) {
                     return Container(
                       height: 50,
-                      color: Colors.white,
                     );
                   } else {
                     return Column(
@@ -84,7 +83,8 @@ class _ProfileUIState extends State<ProfileUI> {
                                 children: [
                                   const CircleAvatar(
                                     radius: 60,
-                                    backgroundImage: AssetImage('bgg.jpeg'),
+                                    backgroundImage:
+                                        AssetImage('assets/bgg.jpeg'),
                                   ),
                                   SizedBox(height: 10),
                                   Text(
@@ -146,81 +146,83 @@ class _ProfileUIState extends State<ProfileUI> {
                 showModalBottomSheet(
                   context: context,
                   builder: (BuildContext context) {
-                    return Container(
-                      padding: const EdgeInsets.all(20),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          TextField(
-                            controller: nameController,
-                            decoration:
-                                const InputDecoration(labelText: 'Name'),
-                          ),
-                          TextField(
-                            controller: emailController,
-                            decoration:
-                                const InputDecoration(labelText: 'Email'),
-                          ),
-                          TextField(
-                            controller: locationController,
-                            decoration:
-                                const InputDecoration(labelText: 'Location'),
-                          ),
-                          TextField(
-                            controller: phoneController,
-                            keyboardType: TextInputType.phone,
-                            decoration:
-                                const InputDecoration(labelText: 'Phone'),
-                          ),
-                          TextField(
-                            controller: dateController,
-                            readOnly: true,
-                            onTap: () async {
-                              final DateTime? selected = await showDatePicker(
-                                context: context,
-                                initialDate: DateTime.now(),
-                                firstDate: DateTime(1900),
-                                lastDate: DateTime.now(),
-                              );
+                    return SingleChildScrollView(
+                      child: Container(
+                        padding: const EdgeInsets.all(20),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            TextField(
+                              controller: nameController,
+                              decoration:
+                                  const InputDecoration(labelText: 'Name'),
+                            ),
+                            TextField(
+                              controller: emailController,
+                              decoration:
+                                  const InputDecoration(labelText: 'Email'),
+                            ),
+                            TextField(
+                              controller: locationController,
+                              decoration:
+                                  const InputDecoration(labelText: 'Location'),
+                            ),
+                            TextField(
+                              controller: phoneController,
+                              keyboardType: TextInputType.phone,
+                              decoration:
+                                  const InputDecoration(labelText: 'Phone'),
+                            ),
+                            TextField(
+                              controller: dateController,
+                              readOnly: true,
+                              onTap: () async {
+                                final DateTime? selected = await showDatePicker(
+                                  context: context,
+                                  initialDate: DateTime.now(),
+                                  firstDate: DateTime(1900),
+                                  lastDate: DateTime.now(),
+                                );
 
-                              if (selected != null) {
-                                setState(() {
-                                  selectedDate = selected;
-                                  dateController.text =
-                                      selectedDate!.toString();
+                                if (selected != null) {
+                                  setState(() {
+                                    selectedDate = selected;
+                                    dateController.text =
+                                        selectedDate!.toString();
+                                  });
+                                }
+                              },
+                              decoration:
+                                  const InputDecoration(labelText: 'Date'),
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                String name = nameController.text;
+                                String email = emailController.text;
+                                String location = locationController.text;
+                                String phone = phoneController.text;
+                                String birthday = selectedDate != null
+                                    ? selectedDate!.toString()
+                                    : ''; // Convert DateTime to string
+                                ProfileModel profileInformation = ProfileModel(
+                                  name: name,
+                                  email: email,
+                                  phoneNumber: int.parse(phone),
+                                  location: location,
+                                  birthday: birthday,
+                                );
+                                storeProfileLocally(profileInformation)
+                                    .then((value) {
+                                  BlocProvider.of<ProfileInfoBloc>(context).add(
+                                      ProfileAddedEvent(profileInformation));
                                 });
-                              }
-                            },
-                            decoration:
-                                const InputDecoration(labelText: 'Date'),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {
-                              String name = nameController.text;
-                              String email = emailController.text;
-                              String location = locationController.text;
-                              String phone = phoneController.text;
-                              String birthday = selectedDate != null
-                                  ? selectedDate!.toString()
-                                  : ''; // Convert DateTime to string
-                              ProfileModel profileInformation = ProfileModel(
-                                name: name,
-                                email: email,
-                                phoneNumber: int.parse(phone),
-                                location: location,
-                                birthday: birthday,
-                              );
-                              storeProfileLocally(profileInformation)
-                                  .then((value) {
-                                BlocProvider.of<ProfileInfoBloc>(context)
-                                    .add(ProfileAddedEvent(profileInformation));
-                              });
 
-                              Navigator.pop(context);
-                            },
-                            child: const Text('Submit'),
-                          ),
-                        ],
+                                Navigator.pop(context);
+                              },
+                              child: const Text('Submit'),
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   },

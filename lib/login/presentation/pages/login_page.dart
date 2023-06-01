@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: Stack(children: [
         Image.asset(
-          "bgg.jpeg",
+          "assets/bgg.jpeg",
           height: MediaQuery.of(context).size.height,
           fit: BoxFit.cover,
         ),

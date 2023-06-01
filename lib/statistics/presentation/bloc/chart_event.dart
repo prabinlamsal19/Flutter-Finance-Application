@@ -8,9 +8,7 @@ abstract class ChartEvent extends Equatable {
 }
 
 class AddChartEvent extends ChartEvent {
-  late List<PieChartData> data;
+  // List<PieChartData> data=[];
   PieChartData pieData;
-  AddChartEvent({required this.pieData}) {
-    data.add(pieData);
-  }
+  AddChartEvent({required this.pieData});
 }

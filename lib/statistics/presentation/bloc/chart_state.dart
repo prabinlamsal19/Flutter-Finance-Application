@@ -10,6 +10,6 @@ abstract class ChartState extends Equatable {
 class ChartInitialState extends ChartState {}
 
 class AddChartState extends ChartState {
-    final List<PieChartData> data;
+  final List<PieChartData> data;
   const AddChartState({required this.data});
 }
