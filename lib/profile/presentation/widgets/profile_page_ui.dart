@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:personal_finance/profile/presentation/bloc/profile_info_bloc/profile_info_bloc.dart';
@@ -27,15 +28,9 @@ class _ProfileUIState extends State<ProfileUI> {
   TextEditingController dateController = TextEditingController();
   DateTime? selectedDate;
 
-  @override
-  void dispose() {
-    nameController.dispose();
-    emailController.dispose();
-    locationController.dispose();
-    phoneController.dispose();
-    dateController.dispose();
-    super.dispose();
-  }
+  // void initState() {
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -67,17 +62,17 @@ class _ProfileUIState extends State<ProfileUI> {
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
-                              Positioned(
-                                top: 40,
-                                left: 16,
-                                child: IconButton(
-                                  icon: const Icon(Icons.arrow_back,
-                                      color: Colors.white),
-                                  onPressed: () {
-                                    // Handle back button press
-                                  },
-                                ),
-                              ),
+                              // Positioned(
+                              //   top: 40,
+                              //   left: 16,
+                              //   child: IconButton(
+                              //     icon: const Icon(Icons.arrow_back,
+                              //         color: Colors.white),
+                              //     onPressed: () {
+                              //       // Handle back button press
+                              //     },
+                              //   ),
+                              // ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -86,7 +81,7 @@ class _ProfileUIState extends State<ProfileUI> {
                                     backgroundImage:
                                         AssetImage('assets/bgg.jpeg'),
                                   ),
-                                  SizedBox(height: 10),
+                                  const SizedBox(height: 10),
                                   Text(
                                     profileModel!.name,
                                     style: const TextStyle(
@@ -211,13 +206,14 @@ class _ProfileUIState extends State<ProfileUI> {
                                   location: location,
                                   birthday: birthday,
                                 );
-                                storeProfileLocally(profileInformation)
-                                    .then((value) {
+
+                                try {
                                   BlocProvider.of<ProfileInfoBloc>(context).add(
                                       ProfileAddedEvent(profileInformation));
-                                });
-
-                                Navigator.pop(context);
+                                  AutoRouter.of(context).pop();
+                                } catch (error) {
+                                  print(error);
+                                }
                               },
                               child: const Text('Submit'),
                             ),
@@ -244,4 +240,14 @@ class _ProfileUIState extends State<ProfileUI> {
       ),
     );
   }
+
+  // @override
+  // void dispose() {
+  //   nameController.dispose();
+  //   emailController.dispose();
+  //   locationController.dispose();
+  //   phoneController.dispose();
+  //   dateController.dispose();
+  //   super.dispose();
+  // }
 }

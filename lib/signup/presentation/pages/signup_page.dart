@@ -44,7 +44,7 @@ class _SignupPageState extends State<SignupPage> {
               decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 237, 238, 236),
                   borderRadius: BorderRadius.circular(7)),
-              height: MediaQuery.of(context).size.height / 1.4,
+              height: MediaQuery.of(context).size.height / 1.35,
               width: MediaQuery.of(context).size.width / 1.2,
               child: Form(
                 key: _formKey,

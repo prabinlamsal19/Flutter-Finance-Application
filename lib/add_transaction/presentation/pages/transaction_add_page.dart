@@ -193,7 +193,7 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
                             category: transactionType ?? "None",
                             value: amount ?? 0)));
                     Future.delayed(const Duration(seconds: 1), () {
-                      Navigator.of(context).pop(true);
+                      Navigator.of(context).pop(); //removed true
                     });
                     return const AlertDialog(
                       content: Text('The task was added'),

@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
@@ -5,6 +6,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 
 import '../../data/models/chart_model.dart';
 
+@RoutePage()
 class PieChartScreen extends StatelessWidget {
   void addData(PieChartData newData) {
     data?.add(newData);
@@ -44,7 +46,7 @@ class PieChartScreen extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 114, 109, 109),
                         borderRadius: BorderRadius.circular(8),
                         boxShadow: [
                           BoxShadow(

@@ -11,3 +11,8 @@ class ProfileAddedEvent extends ProfileInfoEvent {
   ProfileModel profileModel;
   ProfileAddedEvent(this.profileModel);
 }
+
+class ProfileLoadedEvent extends ProfileInfoEvent {
+  ProfileModel profileModel;
+  ProfileLoadedEvent(this.profileModel);
+}

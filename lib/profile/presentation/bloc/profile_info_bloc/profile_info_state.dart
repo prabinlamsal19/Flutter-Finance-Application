@@ -7,7 +7,11 @@ abstract class ProfileInfoState extends Equatable {
   List<Object> get props => [];
 }
 
-class ProfileInfoInitial extends ProfileInfoState {}
+class ProfileInfoInitial extends ProfileInfoState {
+  //display the data if availaible (?)
+//do it in initstate lol
+  //if no emit with null , the ProfileUI will handle the null case itself
+}
 
 class ProfileAddedState extends ProfileInfoState {
   final ProfileModel profileModel;
@@ -15,3 +19,9 @@ class ProfileAddedState extends ProfileInfoState {
 }
 
 // class ProfileChangedState extends ProfileInfoState{}
+class ProfileLoadingState extends ProfileInfoState {}
+
+class ProfileLoadedState extends ProfileInfoState {
+  final ProfileModel profileModel;
+  const ProfileLoadedState(this.profileModel);
+}

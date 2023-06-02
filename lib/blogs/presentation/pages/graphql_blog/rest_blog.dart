@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
@@ -25,7 +26,7 @@ query Content{
   }
 }
 """;
-
+@RoutePage()
 class RestBlogPage extends StatelessWidget {
   const RestBlogPage({super.key});
 

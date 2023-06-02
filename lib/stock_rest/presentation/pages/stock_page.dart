@@ -1,8 +1,10 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import '../../data/models/stock_model.dart';
 import '../../data/repositories/rest_stock_service.dart';
 
+@RoutePage()
 class StocksPage extends StatefulWidget {
   @override
   _StocksPageState createState() => _StocksPageState();

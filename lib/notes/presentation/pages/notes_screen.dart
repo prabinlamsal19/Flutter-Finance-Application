@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 
 import '../../data/models/note_model.dart';
@@ -5,6 +6,7 @@ import '../../data/repository/database_helper.dart';
 import '../widgets/note_widget.dart';
 import 'note_screen.dart';
 
+@RoutePage()
 class NotesScreen extends StatefulWidget {
   const NotesScreen({Key? key}) : super(key: key);
 

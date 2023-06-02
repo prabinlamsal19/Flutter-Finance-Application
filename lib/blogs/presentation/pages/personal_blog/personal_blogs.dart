@@ -1,9 +1,11 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import '../../../data/models/blog_model.dart';
 import '../../../data/repositories/sqlite_service.dart';
 import '../../widgets/personal_blog_row.dart';
 import 'add_personal_blog_page.dart';
 
+@RoutePage()
 class PersonalBlogPage extends StatefulWidget {
   const PersonalBlogPage({Key? key}) : super(key: key);
 

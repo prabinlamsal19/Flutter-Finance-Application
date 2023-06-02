@@ -1,10 +1,14 @@
+import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:personal_finance/add_transaction/presentation/pages/transaction_add_page.dart';
+import 'package:personal_finance/config/routes/routes_imports.gr.dart';
 import 'package:personal_finance/notes/presentation/pages/notes_screen.dart';
 import '../bloc/transaction_bloc.dart';
 import '../widgets/transaction_card.dart';
 
+@RoutePage()
 class TransactionPage extends StatelessWidget {
   const TransactionPage({Key? key});
 
@@ -67,6 +71,7 @@ class TransactionPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const NotesScreen()));
+              // AutoRouter.of(context).push(const NotesScreenRoute());
             },
             tooltip: 'Add notes',
             child: const Icon(Icons.notes),

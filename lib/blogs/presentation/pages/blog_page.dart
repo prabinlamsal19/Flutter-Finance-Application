@@ -1,7 +1,9 @@
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_finance/blogs/presentation/pages/personal_blog/personal_blogs.dart';
 import 'package:personal_finance/blogs/presentation/pages/graphql_blog/rest_blog.dart';
 
+@RoutePage()
 class BlogPage extends StatefulWidget {
   const BlogPage({Key? key}) : super(key: key);
 
