@@ -82,7 +82,12 @@ dev_dependencies:
   hive_generator:
   flutter_riverpod:
   bloc_test:
+  flutter_launcher_icons:
   # image_picker_web:
+flutter_launcher_icons: 
+  android: "launcher-icon"
+  ios: true 
+  image_path: "assets/app_logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
