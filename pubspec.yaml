@@ -57,6 +57,8 @@ dependencies:
   flutter_fast_forms:
   path:
   sqflite:
+  ferry: 
+  gql_http_link:
   user_repository:
     path: packages/user_repository
   path_provider: ^2.0.15
@@ -64,7 +66,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -83,6 +84,7 @@ dev_dependencies:
   flutter_riverpod:
   bloc_test:
   flutter_launcher_icons:
+  ferry_generator:
   # image_picker_web:
 flutter_launcher_icons: 
   android: "launcher-icon"
@@ -94,7 +96,6 @@ flutter_launcher_icons:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

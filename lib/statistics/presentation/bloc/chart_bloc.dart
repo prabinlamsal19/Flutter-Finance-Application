@@ -11,6 +11,7 @@ class ChartBloc extends Bloc<ChartEvent, ChartState> {
 
   ChartBloc() : super(ChartInitialState()) {
     on<AddChartEvent>((event, emit) {
+      emit(ChartLoadingState());
       PieChartList.add(event.pieData);
       emit(AddChartState(data: PieChartList));
       print("AddChartState emitted");

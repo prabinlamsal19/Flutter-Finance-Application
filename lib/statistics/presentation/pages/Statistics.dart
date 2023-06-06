@@ -13,6 +13,9 @@ class PieChartScreen extends StatelessWidget {
   }
 
   List<PieChartData>? data = [];
+  double incomeValue = 0;
+  double expenseValue = 0;
+  double transferValue = 0;
 
   PieChartScreen({super.key});
   @override
@@ -21,6 +24,27 @@ class PieChartScreen extends StatelessWidget {
       builder: (context, state) {
         if (state is AddChartState) {
           data = state.data;
+          //edit the data (piechartlist array) such that data.category is a unique field
+          if (data != null) {
+            incomeValue = 0;
+            expenseValue = 0;
+            transferValue = 0;
+            for (final eachData in data!) {
+              if (eachData.category == "Income") {
+                incomeValue = incomeValue + eachData.value;
+              } else if (eachData.category == "Expense") {
+                expenseValue = expenseValue + eachData.value;
+              } else {
+                transferValue = transferValue + eachData.value;
+              }
+            }
+          }
+          List<PieChartData> finalData = [
+            PieChartData(category: "Income", value: incomeValue),
+            PieChartData(category: "Expense", value: expenseValue),
+            PieChartData(category: "Transfer", value: transferValue)
+          ];
+
           if (data != null) {
             return Scaffold(
               body: Stack(
@@ -29,13 +53,24 @@ class PieChartScreen extends StatelessWidget {
                     child: SfCircularChart(
                       series: <CircularSeries>[
                         PieSeries<PieChartData, String>(
-                          dataSource: data,
-                          xValueMapper: (PieChartData data, _) => data.category,
-                          yValueMapper: (PieChartData data, _) => data.value,
+                          dataSource: finalData,
+                          xValueMapper: (PieChartData finalData, _) =>
+                              finalData.category,
+                          yValueMapper: (PieChartData finalData, _) =>
+                              finalData.value,
                           dataLabelSettings: const DataLabelSettings(
                             isVisible: true,
                             labelPosition: ChartDataLabelPosition.outside,
                           ),
+                          pointColorMapper: (PieChartData finalData, _) {
+                            if (finalData.category == "Income") {
+                              return Colors.green;
+                            } else if (finalData.category == "Expense") {
+                              return Colors.red;
+                            } else {
+                              return Colors.yellow;
+                            }
+                          },
                         ),
                       ],
                     ),
@@ -46,7 +81,7 @@ class PieChartScreen extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 114, 109, 109),
+                        color: const Color.fromARGB(255, 114, 109, 109),
                         borderRadius: BorderRadius.circular(8),
                         boxShadow: [
                           BoxShadow(
@@ -67,7 +102,7 @@ class PieChartScreen extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          for (int i = 0; i < data!.length; i++)
+                          for (int i = 0; i < finalData.length; i++)
                             Row(
                               children: [
                                 Container(
@@ -80,8 +115,11 @@ class PieChartScreen extends StatelessWidget {
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
-                                  data![i].category,
-                                  style: const TextStyle(fontSize: 14),
+                                  finalData[i].category,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: getChartColor(i),
+                                  ),
                                 ),
                               ],
                             ),
@@ -106,10 +144,9 @@ class PieChartScreen extends StatelessWidget {
 
   Color getChartColor(int index) {
     List<Color> colors = <Color>[
-      Colors.blue,
       Colors.green,
-      Colors.orange,
       Colors.red,
+      Colors.yellow,
     ];
     if (index >= 0 && index < colors.length) {
       return colors[index];
