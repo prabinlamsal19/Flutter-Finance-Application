@@ -172,7 +172,8 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
       ),
       ElevatedButton(
           onPressed: () {
-            Navigator.of(context).pop();
+            // Navigator.of(context).pop();
+            Navigator.pop(context);
             if (formKey.currentState!.validate()) {
               //handle vallidation logic later
               formKey.currentState!.save();
@@ -196,7 +197,7 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
                       Navigator.of(context).pop(); //removed true
                     });
                     return const AlertDialog(
-                      content: Text('The task was added'),
+                      content: Text('The transaction was added'),
                     );
                   });
             }

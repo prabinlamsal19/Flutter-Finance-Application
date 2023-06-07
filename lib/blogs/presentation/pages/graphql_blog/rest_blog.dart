@@ -26,6 +26,7 @@ query Content{
   }
 }
 """;
+
 @RoutePage()
 class RestBlogPage extends StatelessWidget {
   const RestBlogPage({super.key});

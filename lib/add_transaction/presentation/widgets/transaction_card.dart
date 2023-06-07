@@ -37,6 +37,8 @@ class TransactionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String date =
+        "${cardModel.date.year}/${cardModel.date.month}/${cardModel.date.day}";
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
@@ -87,13 +89,17 @@ class TransactionCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
               ),
               padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
-              child: Text(
-                cardModel.date.toString(),
-                style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple,
-                    fontFamily: "EBGaramond"),
+              child: Row(
+                children: [
+                  Text(
+                    date,
+                    style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                        fontFamily: "EBGaramond"),
+                  ),
+                ],
               ),
             ),
           ],

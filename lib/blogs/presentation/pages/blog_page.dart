@@ -2,6 +2,8 @@ import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_finance/blogs/presentation/pages/personal_blog/personal_blogs.dart';
 import 'package:personal_finance/blogs/presentation/pages/graphql_blog/rest_blog.dart';
+import 'package:personal_finance/ferry_graphql/pages/people_page.dart';
+import 'package:personal_finance/ferry_graphql/person/graphql/__generated__/people.ast.gql.dart';
 
 @RoutePage()
 class BlogPage extends StatefulWidget {
@@ -19,7 +21,7 @@ class _BlogPageState extends State<BlogPage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -41,7 +43,7 @@ class _BlogPageState extends State<BlogPage>
       body: TabBarView(
         controller: _tabController,
         physics: const NeverScrollableScrollPhysics(),
-        children: const [RestBlogPage(), PersonalBlogPage()],
+        children: const [RestBlogPage(), PersonalBlogPage(), PeoplePage()],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
@@ -54,6 +56,10 @@ class _BlogPageState extends State<BlogPage>
           BottomNavigationBarItem(
             icon: Icon(Icons.personal_video_rounded),
             label: 'Personal Blogs',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.circle),
+            label: 'Star Wars Cast',
           ),
         ],
       ),

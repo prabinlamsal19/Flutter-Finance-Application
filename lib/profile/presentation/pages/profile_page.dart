@@ -8,26 +8,10 @@ import '../bloc/profile_info_bloc/profile_info_bloc.dart';
 import '../widgets/splash_screen.dart';
 
 @RoutePage()
-class ProfilePage extends StatefulWidget {
+class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
-  @override
-  State<ProfilePage> createState() => _ProfilePageState();
-}
-
-class _ProfilePageState extends State<ProfilePage> {
-  // ProfileModel? profileModel;
-
-  @override
-  void initState() {
-    super.initState();
-    // displayIfAlreadyStored();
-  }
-
   // void displayIfAlreadyStored() async {
-  //   profileModel = await displayStoredProfiles();
-  // }
-
   @override
   Widget build(BuildContext context) {
     // print(profileModel?.name.toString());
@@ -58,24 +42,6 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import 'package:auto_route/annotations.dart';
 // import 'package:flutter/material.dart';

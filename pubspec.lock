@@ -353,6 +353,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.1"
+  ferry_flutter:
+    dependency: "direct main"
+    description:
+      name: ferry_flutter
+      sha256: "57c0f441bda868107dfdd7c18491286bbb3b3e5cf6c668f175bde7379b62a537"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.1"
   ferry_generator:
     dependency: "direct dev"
     description:
@@ -361,6 +369,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.8.1"
+  ferry_hive_store:
+    dependency: "direct main"
+    description:
+      name: ferry_hive_store
+      sha256: b8b5737ef35e0368527b3f2f72e0981f80c01c00bf974b0c3b959baf996960b0
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.1"
   ferry_store:
     dependency: transitive
     description:
@@ -423,7 +439,7 @@ packages:
     source: hosted
     version: "9.0.0"
   flutter_hooks:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: flutter_hooks
       sha256: "6a126f703b89499818d73305e4ce1e3de33b4ae1c5512e3b8eab4b986f46774c"
@@ -584,6 +600,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.1"
+  freezed_annotation:
+    dependency: "direct main"
+    description:
+      name: freezed_annotation
+      sha256: aeac15850ef1b38ee368d4c53ba9a847e900bb2c53a4db3f6881cbb3cb684338
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   frontend_server_client:
     dependency: transitive
     description:
@@ -720,6 +744,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
+  hooks_riverpod:
+    dependency: "direct main"
+    description:
+      name: hooks_riverpod
+      sha256: be68cf7653fcab798500f9047ac58c3f109287a1595012412f4a0d654a9bb9c5
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.6"
   http:
     dependency: "direct main"
     description:
@@ -832,6 +864,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.8.0"
+  lazy_load_scrollview:
+    dependency: "direct main"
+    description:
+      name: lazy_load_scrollview
+      sha256: "230c827d6f7ec5e461f0674ef332daae2f78190bf1e4cd84977e51de04b231e3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.0"
   lints:
     dependency: transitive
     description:

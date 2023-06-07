@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:personal_finance/add_transaction/domain/repositories/darkModeProvider.dart';
+import 'package:personal_finance/ferry_graphql/utils/ferry_service.dart';
+import 'package:personal_finance/ferry_graphql/utils/hive_service.dart';
 import 'package:personal_finance/profile/presentation/bloc/profile_info_bloc/profile_info_bloc.dart';
 import 'package:personal_finance/signup/presentation/bloc/sign_in_bloc.dart';
 import 'package:personal_finance/signup/presentation/cubits/cubit/pw_cubit.dart';
@@ -18,8 +20,18 @@ Future<void> main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(StockModelAdapter());
   await Hive.openBox<StockModel>('stocks');
+
+  //ferrygraphql
+  final container = ProviderContainer();
+  final hiveService = container.read(hiveServiceProvider);
+  final ferryService = container.read(ferryServiceProvider);
+  await hiveService.init();
+  final client = await ferryService.initClient();
+
   runApp(
-    ProviderScope(child: MyApp()),
+    ProviderScope(
+        overrides: [ferryClientProvider.overrideWithValue(client)],
+        child: MyApp()),
   );
 }
 

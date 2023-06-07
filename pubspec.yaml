@@ -51,6 +51,11 @@ dependencies:
   # authentication_repository:
   formz:
   uuid:
+  hooks_riverpod:
+  freezed_annotation:
+  flutter_hooks:
+  ferry_flutter:
+  lazy_load_scrollview:
   image_picker:
   file_picker:
   graphql_flutter: ^5.1.2
@@ -59,6 +64,7 @@ dependencies:
   sqflite:
   ferry: 
   gql_http_link:
+  ferry_hive_store:
   user_repository:
     path: packages/user_repository
   path_provider: ^2.0.15

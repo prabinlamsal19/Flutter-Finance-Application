@@ -111,11 +111,9 @@ abstract class $AppRouter extends _i14.RootStackRouter {
       );
     },
     ProfilePageRoute.name: (routeData) {
-      final args = routeData.argsAs<ProfilePageRouteArgs>(
-          orElse: () => const ProfilePageRouteArgs());
       return _i14.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: _i11.ProfilePage(key: args.key),
+        child: const _i11.ProfilePage(),
       );
     },
     LoginPageRoute.name: (routeData) {
@@ -318,31 +316,16 @@ class NoteScreenRouteArgs {
 
 /// generated route for
 /// [_i11.ProfilePage]
-class ProfilePageRoute extends _i14.PageRouteInfo<ProfilePageRouteArgs> {
-  ProfilePageRoute({
-    _i15.Key? key,
-    List<_i14.PageRouteInfo>? children,
-  }) : super(
+class ProfilePageRoute extends _i14.PageRouteInfo<void> {
+  const ProfilePageRoute({List<_i14.PageRouteInfo>? children})
+      : super(
           ProfilePageRoute.name,
-          args: ProfilePageRouteArgs(key: key),
           initialChildren: children,
         );
 
   static const String name = 'ProfilePageRoute';
 
-  static const _i14.PageInfo<ProfilePageRouteArgs> page =
-      _i14.PageInfo<ProfilePageRouteArgs>(name);
-}
-
-class ProfilePageRouteArgs {
-  const ProfilePageRouteArgs({this.key});
-
-  final _i15.Key? key;
-
-  @override
-  String toString() {
-    return 'ProfilePageRouteArgs{key: $key}';
-  }
+  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
 }
 
 /// generated route for
