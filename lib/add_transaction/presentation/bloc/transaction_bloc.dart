@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
 
 import '../../data/models/transaction_model.dart';
 import '../../data/repository/local_transaction_storage.dart';
@@ -17,6 +18,13 @@ class TransactionBloc extends Bloc<TransactionEvent, TransactionState> {
       emit(TransactionAddedState(transactionCardList: transactionCardList));
       // add the new transaction card to the flutter secure storage also
       await storeTransactionLocally(event.transactionCard);
+    });
+    on<TransactionDeletedEvent>((event, emit) {
+      transactionCardList.remove(event.transactionCard);
+      emit(TransactionAddedState(transactionCardList: transactionCardList));
+
+      //chatgpt, can I add chart deleted event from here
+      // add(AddChartEvent(pieData: transactionCardList));
     });
   }
 }

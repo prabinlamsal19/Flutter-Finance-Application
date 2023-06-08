@@ -12,10 +12,8 @@ import '../../person/graphql/__generated__/people.data.gql.dart'
         GPeopleData_allPeople_pageInfo,
         GPeopleData_allPeople_people,
         GPeopleData_allPeople_people_species;
-import '../../person/graphql/__generated__/people.data.gql.dart'
-    show GPeopleReq;
+import '../../person/graphql/__generated__/people.req.gql.dart' show GPeopleReq;
 
-import '../../person/graphql/__generated__/people.req.gql.dart';
 import '../../person/graphql/__generated__/people.var.gql.dart'
     show GPeopleVars;
 
@@ -23,8 +21,6 @@ import 'package:gql_code_builder/src/serializers/operation_serializer.dart'
     show OperationSerializer;
 
 part 'serializers.gql.g.dart';
-
-// new imports
 
 final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   ..add(OperationSerializer())

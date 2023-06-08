@@ -4,12 +4,11 @@
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 import 'package:ferry_exec/ferry_exec.dart' as _i1;
-import '../../../schema/__generated__/serializers.gql.dart' as _i6;
-import '../../../person/graphql/__generated__/people.data.gql.dart' as _i2;
-import '../../../person/graphql/__generated__/people.var.gql.dart' as _i3;
 import '../../../person/graphql/__generated__/people.ast.gql.dart' as _i5;
-
-import 'package:gql_exec/gql_exec.dart' as _i4;
+import 'package:gql_exec/gql_exec.dart' as _i4; 
+import '../../../person/graphql/__generated__/people.var.gql.dart' as _i3;
+import '../../../person/graphql/__generated__/people.data.gql.dart' as _i2; 
+import '../../../schema/__generated__/serializers.gql.dart' as _i6;
 
 part 'people.req.gql.g.dart';
 

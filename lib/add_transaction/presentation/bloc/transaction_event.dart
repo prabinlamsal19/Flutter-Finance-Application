@@ -11,3 +11,8 @@ class TransactionAddedEvent extends TransactionEvent {
   final TransactionModel transactionCard;
   TransactionAddedEvent({required this.transactionCard});
 }
+
+class TransactionDeletedEvent extends TransactionEvent {
+  final TransactionModel transactionCard;
+  TransactionDeletedEvent({required this.transactionCard});
+}

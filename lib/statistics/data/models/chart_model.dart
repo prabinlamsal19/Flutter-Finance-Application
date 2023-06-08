@@ -7,5 +7,5 @@ class PieChartData extends Equatable {
   PieChartData({required this.category, required this.value});
 
   @override
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [category, value];
 }

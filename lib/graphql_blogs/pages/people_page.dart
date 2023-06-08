@@ -1,15 +1,17 @@
+
 import 'package:ferry/ferry.dart';
 import 'package:ferry_flutter/ferry_flutter.dart';
 import 'package:flutter/material.dart';
+import '../../graphql_blogs/person/graphql/__generated__/people.data.gql.dart'; 
+import '../../graphql_blogs/person/graphql/__generated__/people.var.gql.dart'; 
+import '../utils/ferry_service.dart';
+
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:lazy_load_scrollview/lazy_load_scrollview.dart';
-import '../person/graphql/__generated__/people.data.gql.dart';
-import '../person/graphql/__generated__/people.var.gql.dart';
 
 import '../components/error.dart';
 import '../components/loading.dart';
 import '../person/graphql/__generated__/people.req.gql.dart';
-import '../utils/ferry_service.dart';
 
 /// Fetch People from GraphQL API
 ///

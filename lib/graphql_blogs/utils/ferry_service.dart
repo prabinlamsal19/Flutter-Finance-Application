@@ -1,8 +1,8 @@
 import 'package:ferry/ferry.dart';
 import 'package:ferry_hive_store/ferry_hive_store.dart';
+import '../utils/hive_service.dart';
 import 'package:gql_http_link/gql_http_link.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:personal_finance/ferry_graphql/utils/hive_service.dart';
 
 final ferryClientProvider = Provider<Client>((ref) {
   final link =

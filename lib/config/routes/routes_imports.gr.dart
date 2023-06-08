@@ -8,125 +8,117 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i14;
-import 'package:flutter/material.dart' as _i15;
+import 'package:auto_route/auto_route.dart' as _i13;
+import 'package:flutter/material.dart' as _i14;
 import 'package:personal_finance/add_task/presentation/pages/home_page.dart'
-    as _i13;
-import 'package:personal_finance/add_transaction/presentation/pages/homepage.dart'
-    as _i6;
-import 'package:personal_finance/add_transaction/presentation/pages/transaction_page.dart'
-    as _i7;
-import 'package:personal_finance/blogs/presentation/pages/blog_page.dart'
-    as _i3;
-import 'package:personal_finance/blogs/presentation/pages/graphql_blog/rest_blog.dart'
-    as _i4;
-import 'package:personal_finance/blogs/presentation/pages/personal_blog/personal_blogs.dart'
-    as _i2;
-import 'package:personal_finance/login/presentation/pages/login_page.dart'
     as _i12;
-import 'package:personal_finance/notes/data/models/note_model.dart' as _i16;
-import 'package:personal_finance/notes/presentation/pages/note_screen.dart'
-    as _i10;
-import 'package:personal_finance/notes/presentation/pages/notes_screen.dart'
-    as _i9;
-import 'package:personal_finance/profile/presentation/pages/profile_page.dart'
+import 'package:personal_finance/add_transaction/presentation/pages/homepage.dart'
+    as _i5;
+import 'package:personal_finance/add_transaction/presentation/pages/transaction_page.dart'
+    as _i6;
+import 'package:personal_finance/blogs/presentation/pages/blog_page.dart'
+    as _i2;
+import 'package:personal_finance/blogs/presentation/pages/graphql_blog/rest_blog.dart'
+    as _i3;
+import 'package:personal_finance/login/presentation/pages/login_page.dart'
     as _i11;
-import 'package:personal_finance/signup/presentation/pages/signup_page.dart'
+import 'package:personal_finance/notes/data/models/note_model.dart' as _i15;
+import 'package:personal_finance/notes/presentation/pages/note_screen.dart'
+    as _i9;
+import 'package:personal_finance/notes/presentation/pages/notes_screen.dart'
     as _i8;
+import 'package:personal_finance/profile/presentation/pages/profile_page.dart'
+    as _i10;
+import 'package:personal_finance/signup/presentation/pages/signup_page.dart'
+    as _i7;
 import 'package:personal_finance/statistics/presentation/pages/Statistics.dart'
     as _i1;
 import 'package:personal_finance/stock_rest/presentation/pages/stock_page.dart'
-    as _i5;
+    as _i4;
 
-abstract class $AppRouter extends _i14.RootStackRouter {
+abstract class $AppRouter extends _i13.RootStackRouter {
   $AppRouter({super.navigatorKey});
 
   @override
-  final Map<String, _i14.PageFactory> pagesMap = {
+  final Map<String, _i13.PageFactory> pagesMap = {
     PieChartScreenRoute.name: (routeData) {
       final args = routeData.argsAs<PieChartScreenRouteArgs>(
           orElse: () => const PieChartScreenRouteArgs());
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
         child: _i1.PieChartScreen(key: args.key),
       );
     },
-    PersonalBlogPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const _i2.PersonalBlogPage(),
-      );
-    },
     BlogPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i3.BlogPage(),
+        child: const _i2.BlogPage(),
       );
     },
     RestBlogPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i4.RestBlogPage(),
+        child: const _i3.RestBlogPage(),
       );
     },
     StocksPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: _i5.StocksPage(),
+        child: _i4.StocksPage(),
       );
     },
     HomePageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i6.HomePage(),
+        child: const _i5.HomePage(),
       );
     },
     TransactionPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i7.TransactionPage(),
+        child: const _i6.TransactionPage(),
       );
     },
     SignupPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i8.SignupPage(),
+        child: const _i7.SignupPage(),
       );
     },
     NotesScreenRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i9.NotesScreen(),
+        child: const _i8.NotesScreen(),
       );
     },
     NoteScreenRoute.name: (routeData) {
       final args = routeData.argsAs<NoteScreenRouteArgs>(
           orElse: () => const NoteScreenRouteArgs());
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: _i10.NoteScreen(
+        child: _i9.NoteScreen(
           key: args.key,
           note: args.note,
         ),
       );
     },
     ProfilePageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i11.ProfilePage(),
+        child: const _i10.ProfilePage(),
       );
     },
     LoginPageRoute.name: (routeData) {
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i12.LoginPage(),
+        child: const _i11.LoginPage(),
       );
     },
     MyHomePageRoute.name: (routeData) {
       final args = routeData.argsAs<MyHomePageRouteArgs>();
-      return _i14.AutoRoutePage<dynamic>(
+      return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: _i13.MyHomePage(
+        child: _i12.MyHomePage(
           key: args.key,
           taskBubbleList: args.taskBubbleList,
         ),
@@ -137,10 +129,10 @@ abstract class $AppRouter extends _i14.RootStackRouter {
 
 /// generated route for
 /// [_i1.PieChartScreen]
-class PieChartScreenRoute extends _i14.PageRouteInfo<PieChartScreenRouteArgs> {
+class PieChartScreenRoute extends _i13.PageRouteInfo<PieChartScreenRouteArgs> {
   PieChartScreenRoute({
-    _i15.Key? key,
-    List<_i14.PageRouteInfo>? children,
+    _i14.Key? key,
+    List<_i13.PageRouteInfo>? children,
   }) : super(
           PieChartScreenRoute.name,
           args: PieChartScreenRouteArgs(key: key),
@@ -149,14 +141,14 @@ class PieChartScreenRoute extends _i14.PageRouteInfo<PieChartScreenRouteArgs> {
 
   static const String name = 'PieChartScreenRoute';
 
-  static const _i14.PageInfo<PieChartScreenRouteArgs> page =
-      _i14.PageInfo<PieChartScreenRouteArgs>(name);
+  static const _i13.PageInfo<PieChartScreenRouteArgs> page =
+      _i13.PageInfo<PieChartScreenRouteArgs>(name);
 }
 
 class PieChartScreenRouteArgs {
   const PieChartScreenRouteArgs({this.key});
 
-  final _i15.Key? key;
+  final _i14.Key? key;
 
   @override
   String toString() {
@@ -165,23 +157,9 @@ class PieChartScreenRouteArgs {
 }
 
 /// generated route for
-/// [_i2.PersonalBlogPage]
-class PersonalBlogPageRoute extends _i14.PageRouteInfo<void> {
-  const PersonalBlogPageRoute({List<_i14.PageRouteInfo>? children})
-      : super(
-          PersonalBlogPageRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'PersonalBlogPageRoute';
-
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
-}
-
-/// generated route for
-/// [_i3.BlogPage]
-class BlogPageRoute extends _i14.PageRouteInfo<void> {
-  const BlogPageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i2.BlogPage]
+class BlogPageRoute extends _i13.PageRouteInfo<void> {
+  const BlogPageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           BlogPageRoute.name,
           initialChildren: children,
@@ -189,13 +167,13 @@ class BlogPageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'BlogPageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i4.RestBlogPage]
-class RestBlogPageRoute extends _i14.PageRouteInfo<void> {
-  const RestBlogPageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i3.RestBlogPage]
+class RestBlogPageRoute extends _i13.PageRouteInfo<void> {
+  const RestBlogPageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           RestBlogPageRoute.name,
           initialChildren: children,
@@ -203,13 +181,13 @@ class RestBlogPageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'RestBlogPageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i5.StocksPage]
-class StocksPageRoute extends _i14.PageRouteInfo<void> {
-  const StocksPageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i4.StocksPage]
+class StocksPageRoute extends _i13.PageRouteInfo<void> {
+  const StocksPageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           StocksPageRoute.name,
           initialChildren: children,
@@ -217,13 +195,13 @@ class StocksPageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'StocksPageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i6.HomePage]
-class HomePageRoute extends _i14.PageRouteInfo<void> {
-  const HomePageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i5.HomePage]
+class HomePageRoute extends _i13.PageRouteInfo<void> {
+  const HomePageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           HomePageRoute.name,
           initialChildren: children,
@@ -231,13 +209,13 @@ class HomePageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'HomePageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i7.TransactionPage]
-class TransactionPageRoute extends _i14.PageRouteInfo<void> {
-  const TransactionPageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i6.TransactionPage]
+class TransactionPageRoute extends _i13.PageRouteInfo<void> {
+  const TransactionPageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           TransactionPageRoute.name,
           initialChildren: children,
@@ -245,13 +223,13 @@ class TransactionPageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'TransactionPageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i8.SignupPage]
-class SignupPageRoute extends _i14.PageRouteInfo<void> {
-  const SignupPageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i7.SignupPage]
+class SignupPageRoute extends _i13.PageRouteInfo<void> {
+  const SignupPageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           SignupPageRoute.name,
           initialChildren: children,
@@ -259,13 +237,13 @@ class SignupPageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'SignupPageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i9.NotesScreen]
-class NotesScreenRoute extends _i14.PageRouteInfo<void> {
-  const NotesScreenRoute({List<_i14.PageRouteInfo>? children})
+/// [_i8.NotesScreen]
+class NotesScreenRoute extends _i13.PageRouteInfo<void> {
+  const NotesScreenRoute({List<_i13.PageRouteInfo>? children})
       : super(
           NotesScreenRoute.name,
           initialChildren: children,
@@ -273,16 +251,16 @@ class NotesScreenRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'NotesScreenRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i10.NoteScreen]
-class NoteScreenRoute extends _i14.PageRouteInfo<NoteScreenRouteArgs> {
+/// [_i9.NoteScreen]
+class NoteScreenRoute extends _i13.PageRouteInfo<NoteScreenRouteArgs> {
   NoteScreenRoute({
-    _i15.Key? key,
-    _i16.Note? note,
-    List<_i14.PageRouteInfo>? children,
+    _i14.Key? key,
+    _i15.Note? note,
+    List<_i13.PageRouteInfo>? children,
   }) : super(
           NoteScreenRoute.name,
           args: NoteScreenRouteArgs(
@@ -294,8 +272,8 @@ class NoteScreenRoute extends _i14.PageRouteInfo<NoteScreenRouteArgs> {
 
   static const String name = 'NoteScreenRoute';
 
-  static const _i14.PageInfo<NoteScreenRouteArgs> page =
-      _i14.PageInfo<NoteScreenRouteArgs>(name);
+  static const _i13.PageInfo<NoteScreenRouteArgs> page =
+      _i13.PageInfo<NoteScreenRouteArgs>(name);
 }
 
 class NoteScreenRouteArgs {
@@ -304,9 +282,9 @@ class NoteScreenRouteArgs {
     this.note,
   });
 
-  final _i15.Key? key;
+  final _i14.Key? key;
 
-  final _i16.Note? note;
+  final _i15.Note? note;
 
   @override
   String toString() {
@@ -315,9 +293,9 @@ class NoteScreenRouteArgs {
 }
 
 /// generated route for
-/// [_i11.ProfilePage]
-class ProfilePageRoute extends _i14.PageRouteInfo<void> {
-  const ProfilePageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i10.ProfilePage]
+class ProfilePageRoute extends _i13.PageRouteInfo<void> {
+  const ProfilePageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           ProfilePageRoute.name,
           initialChildren: children,
@@ -325,13 +303,13 @@ class ProfilePageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'ProfilePageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i12.LoginPage]
-class LoginPageRoute extends _i14.PageRouteInfo<void> {
-  const LoginPageRoute({List<_i14.PageRouteInfo>? children})
+/// [_i11.LoginPage]
+class LoginPageRoute extends _i13.PageRouteInfo<void> {
+  const LoginPageRoute({List<_i13.PageRouteInfo>? children})
       : super(
           LoginPageRoute.name,
           initialChildren: children,
@@ -339,16 +317,16 @@ class LoginPageRoute extends _i14.PageRouteInfo<void> {
 
   static const String name = 'LoginPageRoute';
 
-  static const _i14.PageInfo<void> page = _i14.PageInfo<void>(name);
+  static const _i13.PageInfo<void> page = _i13.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i13.MyHomePage]
-class MyHomePageRoute extends _i14.PageRouteInfo<MyHomePageRouteArgs> {
+/// [_i12.MyHomePage]
+class MyHomePageRoute extends _i13.PageRouteInfo<MyHomePageRouteArgs> {
   MyHomePageRoute({
-    _i15.Key? key,
+    _i14.Key? key,
     required List<dynamic> taskBubbleList,
-    List<_i14.PageRouteInfo>? children,
+    List<_i13.PageRouteInfo>? children,
   }) : super(
           MyHomePageRoute.name,
           args: MyHomePageRouteArgs(
@@ -360,8 +338,8 @@ class MyHomePageRoute extends _i14.PageRouteInfo<MyHomePageRouteArgs> {
 
   static const String name = 'MyHomePageRoute';
 
-  static const _i14.PageInfo<MyHomePageRouteArgs> page =
-      _i14.PageInfo<MyHomePageRouteArgs>(name);
+  static const _i13.PageInfo<MyHomePageRouteArgs> page =
+      _i13.PageInfo<MyHomePageRouteArgs>(name);
 }
 
 class MyHomePageRouteArgs {
@@ -370,7 +348,7 @@ class MyHomePageRouteArgs {
     required this.taskBubbleList,
   });
 
-  final _i15.Key? key;
+  final _i14.Key? key;
 
   final List<dynamic> taskBubbleList;
 

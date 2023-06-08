@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:personal_finance/add_transaction/domain/repositories/darkModeProvider.dart';
-import 'package:personal_finance/ferry_graphql/utils/ferry_service.dart';
-import 'package:personal_finance/ferry_graphql/utils/hive_service.dart';
 import 'package:personal_finance/profile/presentation/bloc/profile_info_bloc/profile_info_bloc.dart';
 import 'package:personal_finance/signup/presentation/bloc/sign_in_bloc.dart';
 import 'package:personal_finance/signup/presentation/cubits/cubit/pw_cubit.dart';
@@ -11,6 +9,8 @@ import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
 import 'package:personal_finance/stock_rest/presentation/pages/stock_page.dart';
 import 'add_transaction/presentation/bloc/transaction_bloc.dart';
 import 'config/routes/routes_imports.dart';
+import 'graphql_blogs/utils/ferry_service.dart';
+import 'graphql_blogs/utils/hive_service.dart';
 import 'stock_rest/data/models/stock_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

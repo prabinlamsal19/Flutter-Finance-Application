@@ -1,4 +1,6 @@
-class TransactionModel {
+import 'package:equatable/equatable.dart';
+
+class TransactionModel extends Equatable {
   String transactionType;
   DateTime date;
   double amount;
@@ -35,4 +37,8 @@ class TransactionModel {
       'description': description,
     };
   }
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => throw UnimplementedError();
 }
