@@ -23,6 +23,13 @@ class HomePage extends ConsumerStatefulWidget {
 
 class HomePageState extends ConsumerState<HomePage>
     with SingleTickerProviderStateMixin {
+  void _handleDeleteButtonPressed() {
+    deleteAllTransactionsLocally();
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('All transactions deleted')),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     var darkMode = ref.watch(darkModeProvider);
@@ -44,6 +51,18 @@ class HomePageState extends ConsumerState<HomePage>
               onChanged: (value) =>
                   ref.read(darkModeProvider.notifier).toggle(),
             ),
+            title: const Text("Personal Finance"),
+            actions: [
+              IconButton(
+                onPressed: () {
+                  setState(() {
+                    _handleDeleteButtonPressed;
+                  });
+                },
+                icon: Icon(Icons.delete),
+                tooltip: 'Delete All Transactions',
+              ),
+            ],
             bottom: TabBar(
               controller: controller,
               tabs: const [
@@ -54,7 +73,6 @@ class HomePageState extends ConsumerState<HomePage>
                 Tab(icon: Icon(Icons.person)),
               ],
             ),
-            title: const Text("Personal Finance"),
           ),
           body: child,
         );

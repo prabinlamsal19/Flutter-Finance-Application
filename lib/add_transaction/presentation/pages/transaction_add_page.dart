@@ -35,12 +35,6 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
     return FastForm(formKey: formKey, children: [
       FastChoiceChips(
         name: "name of chips",
-        // onSaved: (newValue) {
-        //   setState(() {
-        //     amount = newValue;
-        //   });
-        //   //when saved, the new value of name will be added to the list.
-        // },
         onSaved: (newValue) => transactionType = newValue![0],
         chips: [
           FastChoiceChip(
@@ -181,7 +175,7 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
                   TransactionAddedEvent(
                       transactionCard: TransactionModel(
                           paymentMethod: paymentMethod ?? "Other",
-                          transactionType: "later bro",
+                          transactionType: transactionType ?? "Income",
                           note: note ?? "",
                           description: description ?? "",
                           amount: amount ?? 0,
@@ -189,10 +183,11 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
               showDialog(
                   context: context,
                   builder: (context) {
-                    BlocProvider.of<ChartBloc>(context).add(AddChartEvent(
-                        pieData: PieChartData(
-                            category: transactionType ?? "None",
-                            value: amount ?? 0)));
+                    // BlocProvider.of<ChartBloc>(context).add(AddChartEvent(
+                    //     pieData: PieChartData(
+                    //         category: transactionType ?? "None",
+                    //         value: amount ?? 0)));
+                    BlocProvider.of<ChartBloc>(context).add(ChartLoadEvent());
                     Future.delayed(const Duration(seconds: 1), () {
                       Navigator.of(context).pop(); //removed true
                     });

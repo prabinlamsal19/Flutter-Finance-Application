@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:personal_finance/add_transaction/presentation/pages/transaction_add_page.dart';
 import 'package:personal_finance/config/routes/routes_imports.gr.dart';
 import 'package:personal_finance/notes/presentation/pages/notes_screen.dart';
+import 'package:personal_finance/profile/presentation/widgets/splash_screen.dart';
 import '../bloc/transaction_bloc.dart';
 import '../widgets/transaction_card.dart';
 
@@ -17,7 +18,12 @@ class TransactionPage extends StatelessWidget {
     return Scaffold(
       body: BlocBuilder<TransactionBloc, TransactionState>(
         builder: (context, state) {
-          if (state is TransactionAddedState) {
+          if (state is TransactionInitialState) {
+            print("Control comes to initial state");
+            BlocProvider.of<TransactionBloc>(context)
+                .add(TransactionLoadEvent());
+            return const Center(child: Text("Please add transactions"));
+          } else if (state is TransactionAddedState) {
             final transactionCardList = state.transactionCardList;
             return ListView.builder(
               itemCount: transactionCardList.length,

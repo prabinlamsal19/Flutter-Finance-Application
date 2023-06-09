@@ -42,6 +42,7 @@ dependencies:
   flutter_secure_storage:
   rxdart:
   dio:
+  hydrated_bloc:
   hive:
   hive_flutter:
   json_annotation:

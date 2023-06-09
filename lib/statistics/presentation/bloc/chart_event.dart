@@ -7,6 +7,8 @@ abstract class ChartEvent extends Equatable {
   List<Object> get props => [];
 }
 
+class ChartLoadEvent extends ChartEvent {}
+
 class AddChartEvent extends ChartEvent {
   // List<PieChartData> data=[];
   PieChartData pieData;

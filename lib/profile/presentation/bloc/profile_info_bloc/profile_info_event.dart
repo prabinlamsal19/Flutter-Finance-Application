@@ -12,7 +12,4 @@ class ProfileAddedEvent extends ProfileInfoEvent {
   ProfileAddedEvent(this.profileModel);
 }
 
-class ProfileLoadedEvent extends ProfileInfoEvent {
-  ProfileModel profileModel;
-  ProfileLoadedEvent(this.profileModel);
-}
+class FetchStoredProfile extends ProfileInfoEvent {}

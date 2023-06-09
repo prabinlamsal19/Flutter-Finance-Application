@@ -9,22 +9,31 @@ part 'transaction_event.dart';
 part 'transaction_state.dart';
 
 class TransactionBloc extends Bloc<TransactionEvent, TransactionState> {
-  //The initialization of transactionCardList happens here
-
   List<TransactionModel> transactionCardList = [];
+
   TransactionBloc() : super(TransactionInitialState()) {
+    on<TransactionLoadEvent>((event, emit) async {
+      print("Control comes to Transaction Load event");
+
+      var a = await displayStoredTransaction();
+      for (var i in a) {
+        transactionCardList.add(i);
+      }
+      emit(TransactionAddedState(transactionCardList: transactionCardList));
+      print(
+          "Control goes to transaction added state. Initial data should be shown. Length: ${transactionCardList.length}");
+    });
+
     on<TransactionAddedEvent>((event, emit) async {
       transactionCardList.add(event.transactionCard);
-      emit(TransactionAddedState(transactionCardList: transactionCardList));
-      // add the new transaction card to the flutter secure storage also
       await storeTransactionLocally(event.transactionCard);
+      transactionCardList = await displayStoredTransaction()!;
+      emit(TransactionAddedState(transactionCardList: transactionCardList));
     });
+
     on<TransactionDeletedEvent>((event, emit) {
       transactionCardList.remove(event.transactionCard);
       emit(TransactionAddedState(transactionCardList: transactionCardList));
-
-      //chatgpt, can I add chart deleted event from here
-      // add(AddChartEvent(pieData: transactionCardList));
     });
   }
 }

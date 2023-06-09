@@ -105,7 +105,7 @@ abstract class $AppRouter extends _i13.RootStackRouter {
     ProfilePageRoute.name: (routeData) {
       return _i13.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i10.ProfilePage(),
+        child: _i10.ProfilePage(),
       );
     },
     LoginPageRoute.name: (routeData) {

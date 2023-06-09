@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:personal_finance/config/routes/routes_imports.gr.dart';
 import 'package:personal_finance/profile/presentation/bloc/profile_info_bloc/profile_info_bloc.dart';
 import 'package:personal_finance/profile/presentation/widgets/profile_info_tile.dart';
 
@@ -34,6 +35,16 @@ class _ProfileUIState extends State<ProfileUI> {
   }
 
   @override
+  void dispose() {
+    nameController.dispose();
+    emailController.dispose();
+    locationController.dispose();
+    phoneController.dispose();
+    dateController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -63,17 +74,6 @@ class _ProfileUIState extends State<ProfileUI> {
                           child: Stack(
                             alignment: Alignment.center,
                             children: [
-                              // Positioned(
-                              //   top: 40,
-                              //   left: 16,
-                              //   child: IconButton(
-                              //     icon: const Icon(Icons.arrow_back,
-                              //         color: Colors.white),
-                              //     onPressed: () {
-                              //       // Handle back button press
-                              //     },
-                              //   ),
-                              // ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -207,14 +207,9 @@ class _ProfileUIState extends State<ProfileUI> {
                                   location: location,
                                   birthday: birthday,
                                 );
-
-                                try {
-                                  BlocProvider.of<ProfileInfoBloc>(context).add(
-                                      ProfileAddedEvent(profileInformation));
-                                  AutoRouter.of(context).pop();
-                                } catch (error) {
-                                  print(error);
-                                }
+                                BlocProvider.of<ProfileInfoBloc>(context)
+                                    .add(ProfileAddedEvent(profileInformation));
+                                AutoRouter.of(context).push(ProfilePageRoute());
                               },
                               child: const Text('Submit'),
                             ),
@@ -240,15 +235,5 @@ class _ProfileUIState extends State<ProfileUI> {
         ),
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    nameController.dispose();
-    emailController.dispose();
-    locationController.dispose();
-    phoneController.dispose();
-    dateController.dispose();
-    super.dispose();
   }
 }
