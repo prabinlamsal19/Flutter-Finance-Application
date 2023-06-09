@@ -242,13 +242,13 @@ class _ProfileUIState extends State<ProfileUI> {
     );
   }
 
-  // @override
-  // void dispose() {
-  //   nameController.dispose();
-  //   emailController.dispose();
-  //   locationController.dispose();
-  //   phoneController.dispose();
-  //   dateController.dispose();
-  //   super.dispose();
-  // }
+  @override
+  void dispose() {
+    nameController.dispose();
+    emailController.dispose();
+    locationController.dispose();
+    phoneController.dispose();
+    dateController.dispose();
+    super.dispose();
+  }
 }

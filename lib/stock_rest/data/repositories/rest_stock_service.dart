@@ -14,7 +14,7 @@ Future<void> fetchStocks() async {
         'function': 'TIME_SERIES_INTRADAY',
         'symbol': 'IBM',
         'interval': '5min',
-        'apikey': 'demo',
+        'apikey': 'O0T90L5ALXY8N3A7',
       },
     );
     if (response.statusCode == 200) {
@@ -47,7 +47,7 @@ void addStock() async {
       queryParameters: {
         'function': 'GLOBAL_QUOTE',
         'symbol': symbol,
-        'apikey': 'demo',
+        'apikey': 'O0T90L5ALXY8N3A7',
       },
     );
 

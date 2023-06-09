@@ -76,7 +76,6 @@ Future<void> displayStoredTransaction() async {
     print('Stored Transactions:');
     for (var transactionData in transactionList) {
       final transaction = TransactionModel.fromJson(transactionData);
-
       print('Type: ${transaction.transactionType}');
       print('Date: ${transaction.date}');
       print('Amount: ${transaction.amount}');

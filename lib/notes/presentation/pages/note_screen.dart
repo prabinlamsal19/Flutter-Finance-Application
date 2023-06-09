@@ -18,7 +18,6 @@ class NoteScreen extends StatelessWidget {
       titleController.text = note!.title;
       descriptionController.text = note!.description;
     }
-
     return Scaffold(
       appBar: AppBar(
         title: Text(note == null ? 'Add a note' : 'Edit note'),

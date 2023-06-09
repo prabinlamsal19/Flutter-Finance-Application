@@ -12,27 +12,26 @@ class ProfileInfoBloc extends Bloc<ProfileInfoEvent, ProfileInfoState> {
       displayStoredProfiles();
     }
 
-    on<ProfileLoadedEvent>((event, emit) async {
-      //store the data locally (override the previous one)
-      emit(ProfileLoadingState());
+    // on<ProfileLoadedEvent>((event, emit) async {
+    //   //store the data locally (override the previous one)
+    //   emit(ProfileLoadingState());
 
-      //get the new data
-      final storedProfile =
-          await displayStoredProfiles(); //in this case null won't be returned because profile is added
+    //   //get the new data
+    //   final storedProfile =
+    //       await displayStoredProfiles(); //in this case null won't be returned because profile is added
 
-      //emit the profileaddedstate with the new data
-      emit(ProfileLoadedState(storedProfile!));
-    });
+    //   //emit the profileaddedstate with the new data
+    //   emit(ProfileLoadedState(storedProfile!));
+    // });
+
 
     on<ProfileAddedEvent>((event, emit) async {
       //store the data locally (override the previous one)
-
       emit(ProfileLoadingState());
       await storeProfileLocally(event.profileModel);
       //get the new data
       final storedProfile =
           await displayStoredProfiles(); //in this case null won't be returned because profile is added
-
       //emit the profileaddedstate with the new data
       emit(ProfileAddedState(storedProfile!));
     });

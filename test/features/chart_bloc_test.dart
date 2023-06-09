@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:bloc_test/bloc_test.dart';
 import 'package:personal_finance/statistics/data/models/chart_model.dart';
 import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
-import 'package:bloc_test/bloc_test.dart';
 
 void main() {
   group('ChartBloc', () {
@@ -16,15 +16,31 @@ void main() {
     });
 
     test('initial state is ChartInitialState', () {
-      expect(chartBloc.state, equals(ChartInitialState()));
+      expect(chartBloc.state, ChartInitialState());
     });
 
     blocTest<ChartBloc, ChartState>(
-      'emits AddChartState when AddChartEvent is added',
+      'emits [ChartLoadingState, AddChartState] when AddChartEvent is added',
       build: () => chartBloc,
       act: (bloc) => bloc.add(AddChartEvent(
-          pieData: PieChartData(category: 'Category', value: 10.0))),
-      expect: () => [isA<AddChartState>()],
+          pieData: PieChartData(category: 'Category 1', value: 10.0))),
+      expect: () => [
+        ChartLoadingState(),
+        AddChartState(
+            data: [PieChartData(category: 'Category 1', value: 10.0)]),
+      ],
+    );
+
+    blocTest<ChartBloc, ChartState>(
+      'emits [ChartLoadingState, AddChartState] when AddChartEvent is added with named parameters',
+      build: () => chartBloc,
+      act: (bloc) => bloc.add(AddChartEvent(
+          pieData: PieChartData(category: 'Category 1', value: 10.0))),
+      expect: () => [
+        ChartLoadingState(),
+        AddChartState(
+            data: [PieChartData(category: 'Category 1', value: 10.0)]),
+      ],
     );
   });
 }

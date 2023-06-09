@@ -1,9 +1,8 @@
-
 import 'package:ferry/ferry.dart';
 import 'package:ferry_flutter/ferry_flutter.dart';
 import 'package:flutter/material.dart';
-import '../../graphql_blogs/person/graphql/__generated__/people.data.gql.dart'; 
-import '../../graphql_blogs/person/graphql/__generated__/people.var.gql.dart'; 
+import '../../graphql_blogs/person/graphql/__generated__/people.data.gql.dart';
+import '../../graphql_blogs/person/graphql/__generated__/people.var.gql.dart';
 import '../utils/ferry_service.dart';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -49,7 +48,7 @@ class PeoplePage extends ConsumerWidget {
         return LazyLoadScrollView(
           /// Paginating with [lazy_load_scrollview.dart]
           onEndOfPage: () {
-            if (data!.allPeople!.pageInfo.hasNextPage) {
+            if (data.allPeople!.pageInfo.hasNextPage) {
               final nextRequest = request.rebuild((b) => b
                 ..vars.first = 10
                 ..vars.after = data.allPeople!.pageInfo.endCursor

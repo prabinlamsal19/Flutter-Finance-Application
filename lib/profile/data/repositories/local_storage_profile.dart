@@ -24,7 +24,7 @@ Future<ProfileModel?> displayStoredProfiles() async {
   final jsonString = await storage.read(key: 'profile');
   if (jsonString != null) {
     final data = await jsonDecode(
-        jsonString); //await added //this resulted in the race condition being
+        jsonString); //await added // this resulted in the race condition being
     final profile = ProfileModel(
         name: data['name'],
         email: data['email'],

@@ -9,7 +9,6 @@ import 'package:personal_finance/blogs/presentation/pages/blog_page.dart';
 import 'package:personal_finance/config/routes/routes_imports.gr.dart';
 import 'package:personal_finance/notes/presentation/pages/notes_screen.dart';
 import 'package:personal_finance/statistics/presentation/pages/Statistics.dart';
-import '../../../signup/repository/mongo_repo_signup.dart';
 import '../../../stock_rest/presentation/pages/stock_page.dart';
 import '../../../profile/presentation/pages/profile_page.dart';
 import '../../domain/repositories/darkModeProvider.dart';

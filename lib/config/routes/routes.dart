@@ -23,7 +23,7 @@ class AppRouter extends $AppRouter {
     ]), // (/home)
     AutoRoute(page: LoginPageRoute.page, path: "/login", children: [
       AutoRoute(page: RestBlogPageRoute.page, path: 'graphql'),
-      AutoRoute(page: PersonalBlogPageRoute.page, path: 'personal')
+      // AutoRoute(page: PersonalBlogPageRoute.page, path: 'personal')
     ]),
   ];
 }

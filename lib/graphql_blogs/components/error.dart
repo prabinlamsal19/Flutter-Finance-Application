@@ -9,9 +9,6 @@ class ErrorMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (kDebugMode) {
-      print([error, stackTrace]);
-    }
-    return const Center(child: Text('something went wrong...😢'));
+    return const Center(child: Text('something went wrong...'));
   }
 }
