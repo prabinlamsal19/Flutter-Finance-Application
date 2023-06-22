@@ -1,0 +1,56 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "collection",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/collection-1.17.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/crypto-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/equatable-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/meta-1.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "typed_data",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/typed_data-1.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "uuid",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/uuid-3.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "very_good_analysis",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/very_good_analysis-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "user_repository",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    }
+  ],
+  "generated": "2023-05-23T03:02:47.091209Z",
+  "generator": "pub",
+  "generatorVersion": "2.19.6"
+}

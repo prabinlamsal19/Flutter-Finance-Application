@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/build/macos/Build/Products/Debug/FirebaseCoreInternal/FirebaseCoreInternal.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCoreInternal.build/unextended-module.modulemap",
+    }]
+  }]
+}

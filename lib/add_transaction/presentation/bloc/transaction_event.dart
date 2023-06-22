@@ -18,3 +18,5 @@ class TransactionDeletedEvent extends TransactionEvent {
   final TransactionModel transactionCard;
   TransactionDeletedEvent({required this.transactionCard});
 }
+
+class TransactionClearedEvent extends TransactionEvent {}

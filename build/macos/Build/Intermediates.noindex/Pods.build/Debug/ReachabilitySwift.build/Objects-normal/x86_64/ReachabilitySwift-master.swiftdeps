@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "f7943b71b898ac6bcf1a5ceb802185c51b082a68972cd7efc974e5462237534a"
+build_start_time: [1686902934, 349904060]
+build_end_time: [1686902945, 656311035]
+inputs:
+  "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/ReachabilitySwift/Sources/Reachability.swift": [1686902924, 688709735]

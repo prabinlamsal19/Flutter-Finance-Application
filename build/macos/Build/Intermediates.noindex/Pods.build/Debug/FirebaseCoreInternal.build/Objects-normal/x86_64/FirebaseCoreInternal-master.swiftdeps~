@@ -1,0 +1,29 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "d8951dd3875306b84f555d985900e088576d47e0535676b4f78728f1dbc3a52b"
+build_start_time: [1686902946, 607753038]
+build_end_time: [1686902946, 651672840]
+inputs:
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift"
+  : !private [1686902924, 582125425]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift"
+  : !private [1686902924, 583124637]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatLoggingTestUtils.swift"
+  : !private [1686902924, 583795070]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift"
+  : !private [1686902924, 584129810]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift"
+  : !private [1686902924, 584705352]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift"
+  : !private [1686902924, 585544347]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift"
+  : !private [1686902924, 582470655]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift"
+  : !private [1686902924, 581685066]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift"
+  : !private [1686902924, 585830688]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift"
+  : !private [1686902924, 585081577]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift"
+  : !private [1686902924, 582787990]
+  ? "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift"
+  : !private [1686902924, 583455801]

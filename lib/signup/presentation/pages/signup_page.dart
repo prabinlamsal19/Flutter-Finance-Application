@@ -43,7 +43,7 @@ class _SignupPageState extends State<SignupPage> {
           alignment: const Alignment(0.1, 0.5),
           child: Container(
             decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 237, 238, 236),
+                color: Color.fromARGB(255, 92, 158, 158),
                 borderRadius: BorderRadius.circular(7)),
             height: MediaQuery.of(context).size.height / 1.254,
             width: MediaQuery.of(context).size.width / 1.2,
@@ -237,7 +237,7 @@ class _SignupPageState extends State<SignupPage> {
                       child: const Text(
                         "I already have an account.",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 69, 3, 3),
                         ),
                       ))
                 ],

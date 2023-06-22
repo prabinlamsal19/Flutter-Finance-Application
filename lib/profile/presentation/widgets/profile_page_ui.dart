@@ -135,8 +135,6 @@ class _ProfileUIState extends State<ProfileUI> {
                 },
               ),
             ),
-
-            //insert code here
             ElevatedButton(
               onPressed: () {
                 showModalBottomSheet(
@@ -146,7 +144,7 @@ class _ProfileUIState extends State<ProfileUI> {
                       child: Container(
                         padding: const EdgeInsets.all(20),
                         child: Column(
-                          mainAxisSize: MainAxisSize.max,
+                          mainAxisSize: MainAxisSize.min,
                           children: [
                             TextField(
                               controller: nameController,
@@ -209,7 +207,8 @@ class _ProfileUIState extends State<ProfileUI> {
                                 );
                                 BlocProvider.of<ProfileInfoBloc>(context)
                                     .add(ProfileAddedEvent(profileInformation));
-                                AutoRouter.of(context).push(ProfilePageRoute());
+                                AutoRouter.of(context)
+                                    .push(const ProfilePageRoute());
                               },
                               child: const Text('Submit'),
                             ),

@@ -1,0 +1,20 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "very_good_analysis",
+      "rootUri": "file:///Users/ebpearls/.pub-cache/hosted/pub.dev/very_good_analysis-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "authentication_repository",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    }
+  ],
+  "generated": "2023-05-23T03:02:46.479966Z",
+  "generator": "pub",
+  "generatorVersion": "2.19.6"
+}

@@ -19,7 +19,6 @@ class TransactionPage extends StatelessWidget {
       body: BlocBuilder<TransactionBloc, TransactionState>(
         builder: (context, state) {
           if (state is TransactionInitialState) {
-            print("Control comes to initial state");
             BlocProvider.of<TransactionBloc>(context)
                 .add(TransactionLoadEvent());
             return const Center(child: Text("Please add transactions"));

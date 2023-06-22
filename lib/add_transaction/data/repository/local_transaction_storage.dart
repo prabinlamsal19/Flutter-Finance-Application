@@ -39,3 +39,20 @@ Future<List<TransactionModel>> displayStoredTransaction() async {
 Future<void> deleteAllTransactionsLocally() async {
   await storage.delete(key: 'transactions');
 }
+
+Future<void> deleteSingleTransaction(TransactionModel transaction) async {
+  final jsonString = await storage.read(key: 'transactions');
+  if (jsonString != null) {
+    final decodedData = jsonDecode(jsonString);
+    if (decodedData is List) {
+      final transactionList =
+          decodedData.map((item) => TransactionModel.fromJson(item)).toList();
+      transactionList.removeWhere((item) =>
+          item.amount ==
+          transaction
+              .amount); // Replace 'id' with the identifier of the transaction
+      final updatedData = jsonEncode(transactionList);
+      await storage.write(key: 'transactions', value: updatedData);
+    }
+  }
+}

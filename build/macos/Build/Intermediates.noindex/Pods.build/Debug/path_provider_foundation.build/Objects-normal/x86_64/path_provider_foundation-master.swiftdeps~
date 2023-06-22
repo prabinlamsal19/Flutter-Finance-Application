@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "472602a8bbdbacb05dd86a3a4687a0ab0a6d8fd6f361eee697ff8da8fc938735"
+build_start_time: [1686902931, 278424978]
+build_end_time: [1686902931, 315489053]
+inputs:
+  "/Users/ebpearls/.pub-cache/hosted/pub.dev/path_provider_foundation-2.2.3/macos/Classes/PathProviderPlugin.swift": !private [1684818214, 945014238]
+  "/Users/ebpearls/.pub-cache/hosted/pub.dev/path_provider_foundation-2.2.3/macos/Classes/messages.g.swift": !private [1684818214, 940828323]

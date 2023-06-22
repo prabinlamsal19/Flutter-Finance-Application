@@ -1,8 +1,8 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:personal_finance/add_transaction/presentation/bloc/transaction_bloc.dart';
 import 'package:personal_finance/profile/presentation/widgets/splash_screen.dart';
-import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 import '../../data/models/chart_model.dart';
@@ -21,13 +21,13 @@ class PieChartScreen extends StatelessWidget {
   PieChartScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ChartBloc, ChartState>(
+    return BlocBuilder<TransactionBloc, TransactionState>(
       builder: (context, state) {
-        if (state is ChartInitialState) {
-          BlocProvider.of<ChartBloc>(context).add(ChartLoadEvent());
+        if (state is TransactionInitialState) {
+          BlocProvider.of<TransactionBloc>(context).add(TransactionLoadEvent());
           return const Center(child: Text("Add transactions to view chart 1"));
-        } else if (state is AddChartState) {
-          data = state.data;
+        } else if (state is TransactionAddedState) {
+          data = state.pieChartList;
           if (data != null) {
             incomeValue = 0;
             expenseValue = 0;

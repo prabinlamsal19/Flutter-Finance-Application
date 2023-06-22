@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_fast_forms/flutter_fast_forms.dart';
 import 'package:personal_finance/add_transaction/data/models/transaction_model.dart';
-import 'package:personal_finance/statistics/data/models/chart_model.dart';
-import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
 import 'package:personal_finance/statistics/presentation/pages/Statistics.dart';
 
 import '../bloc/transaction_bloc.dart';
@@ -187,7 +185,7 @@ class _TransactionAddPageState extends State<TransactionAddPage> {
                     //     pieData: PieChartData(
                     //         category: transactionType ?? "None",
                     //         value: amount ?? 0)));
-                    BlocProvider.of<ChartBloc>(context).add(ChartLoadEvent());
+                    // BlocProvider.of<ChartBloc>(context).add(ChartLoadEvent());
                     Future.delayed(const Duration(seconds: 1), () {
                       Navigator.of(context).pop(); //removed true
                     });

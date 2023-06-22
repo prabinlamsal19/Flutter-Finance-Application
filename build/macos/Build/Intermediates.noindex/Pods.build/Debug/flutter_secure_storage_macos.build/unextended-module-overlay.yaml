@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/build/macos/Build/Products/Debug/flutter_secure_storage_macos/flutter_secure_storage_macos.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/build/macos/Build/Intermediates.noindex/Pods.build/Debug/flutter_secure_storage_macos.build/unextended-module.modulemap",
+    }]
+  }]
+}

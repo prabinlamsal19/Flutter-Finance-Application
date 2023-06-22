@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8118bae0-51be-4604-88ce-167a5141ae24" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/data/models/transaction_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/data/models/transaction_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/data/repository/local_transaction_storage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/data/repository/local_transaction_storage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/domain/repositories/darkModeProvider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/domain/repositories/darkModeProvider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/bloc/transaction_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/bloc/transaction_bloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/bloc/transaction_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/bloc/transaction_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/bloc/transaction_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/bloc/transaction_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/pages/homepage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/pages/homepage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/pages/transaction_add_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/pages/transaction_add_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/pages/transaction_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/pages/transaction_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/add_transaction/presentation/widgets/transaction_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/add_transaction/presentation/widgets/transaction_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/presentation/pages/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/profile/presentation/widgets/profile_page_ui.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/profile/presentation/widgets/profile_page_ui.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/signup/presentation/pages/signup_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/signup/presentation/pages/signup_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/statistics/presentation/bloc/chart_bloc.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/statistics/presentation/bloc/chart_event.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/statistics/presentation/bloc/chart_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/statistics/presentation/pages/Statistics.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/statistics/presentation/pages/Statistics.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/features/chart_bloc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/features/chart_bloc_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RVtWioMTfEzZATFoGWho9eZbW3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8118bae0-51be-4604-88ce-167a5141ae24" name="Changes" comment="" />
+      <created>1687347112187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687347112187</updated>
+    </task>
+    <servers />
+  </component>
+</project>

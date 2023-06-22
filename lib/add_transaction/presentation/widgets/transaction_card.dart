@@ -1,42 +1,25 @@
-// import 'package:flutter/material.dart';
-// import 'package:personal_finance/add_transaction/data/models/transaction_model.dart';
-
-// class TransactionCard extends StatelessWidget {
-//   TransactionModel cardModel;
-//   TransactionCard({super.key, required this.cardModel});
-
-//   // const TransactionCard({super.key, required this.nameoftransactionlol});
-//   @override
-//   Widget build(BuildContext context) {
-//     final textleft = cardModel.paymentMethod;
-//     return Card(
-//       elevation: 5,
-//       color: Colors.white10,
-//       child: Row(children: [
-//         Text(textleft,
-//             style: const TextStyle(
-//               fontSize: 10,
-//               color: Colors.grey,
-//             )),
-//         Text(
-//           "${cardModel.amount}",
-//           style: const TextStyle(fontSize: 15, color: Colors.black87),
-//         )
-//       ]),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:personal_finance/add_transaction/data/models/transaction_model.dart';
 import 'package:personal_finance/add_transaction/presentation/bloc/transaction_bloc.dart';
-import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
 
 class TransactionCard extends StatelessWidget {
   final TransactionModel cardModel;
 
-  const TransactionCard({super.key, required this.cardModel});
+  const TransactionCard({Key? key, required this.cardModel}) : super(key: key);
+
+  Color getCardColor() {
+    switch (cardModel.transactionType) {
+      case "Transfer":
+        return Colors.yellow;
+      case "Income":
+        return Colors.green;
+      case "Expense":
+        return Colors.red;
+      default:
+        return Colors.white;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +32,9 @@ class TransactionCard extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: getCardColor(),
           borderRadius: BorderRadius.circular(12.0),
+          border: Border.all(color: Colors.black, width: 2.0),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.2),
@@ -84,7 +68,7 @@ class TransactionCard extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w600,
-                          color: Colors.green,
+                          color: Colors.black87,
                           fontFamily: "EBGaramond"),
                     ),
                   ],

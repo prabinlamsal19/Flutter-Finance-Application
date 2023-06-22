@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "29c503242f94a625c1ed029d288151593c9c679931f4d9d9610b4ce5cb6bb024"
+build_start_time: [1687347075, 603654861]
+build_end_time: [1687347081, 509413003]
+inputs:
+  "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Flutter/GeneratedPluginRegistrant.swift": [1687347057, 264804363]
+  "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Runner/AppDelegate.swift": [1684810920, 473939895]
+  "/Users/ebpearls/Documents/74/new/Personal_finance_flutter_node/macos/Runner/MainFlutterWindow.swift": [1684810920, 477140903]
