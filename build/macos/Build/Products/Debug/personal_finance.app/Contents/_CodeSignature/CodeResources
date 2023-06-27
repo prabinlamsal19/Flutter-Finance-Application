@@ -23,10 +23,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			5rU7qpoT0jRzOW03YKHqOgjjd+E=
+			3Byhg+Xvvvb/oPWMK2R7sed3Omc=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"e6b53baa9a13d23473396d3760a1ea3a08e377e1"</string>
+			<string>cdhash H"dc1ca183e5efbef6ffa0f58c2b647bb1e7773a67"</string>
 		</dict>
 		<key>Frameworks/FBLPromises.framework</key>
 		<dict>
@@ -59,10 +59,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			welutx4WdP2jbNl9VEJLnnYHFxQ=
+			pDUVW+uhavpbAndZvqTQPCAVDF8=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"c1e96eb71e1674fda36cd97d54424b9e76071714"</string>
+			<string>cdhash H"a435155beba16afa5b027759bea4d03c20150c5f"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
