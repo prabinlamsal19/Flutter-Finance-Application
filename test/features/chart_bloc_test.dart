@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:bloc_test/bloc_test.dart';
-import 'package:personal_finance/statistics/data/models/chart_model.dart';
-import 'package:personal_finance/statistics/presentation/bloc/chart_bloc.dart';
+import 'package:personal_finance/features/statistics/data/models/chart_model.dart';
+import 'package:personal_finance/features/statistics/presentation/bloc/chart_bloc.dart';
 
 void main() {
   group('ChartBloc', () {

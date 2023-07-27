@@ -10,30 +10,30 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i13;
 import 'package:flutter/material.dart' as _i14;
-import 'package:personal_finance/add_task/presentation/pages/home_page.dart'
+import 'package:personal_finance/features/add_task/presentation/pages/home_page.dart'
     as _i12;
-import 'package:personal_finance/add_transaction/presentation/pages/homepage.dart'
+import 'package:personal_finance/features/add_transaction/presentation/pages/homepage.dart'
     as _i5;
-import 'package:personal_finance/add_transaction/presentation/pages/transaction_page.dart'
+import 'package:personal_finance/features/add_transaction/presentation/pages/transaction_page.dart'
     as _i6;
-import 'package:personal_finance/blogs/presentation/pages/blog_page.dart'
+import 'package:personal_finance/features/blogs/presentation/pages/blog_page.dart'
     as _i2;
-import 'package:personal_finance/blogs/presentation/pages/graphql_blog/rest_blog.dart'
+import 'package:personal_finance/features/blogs/presentation/pages/graphql_blog/rest_blog.dart'
     as _i3;
-import 'package:personal_finance/login/presentation/pages/login_page.dart'
+import 'package:personal_finance/features/login/presentation/pages/login_page.dart'
     as _i11;
-import 'package:personal_finance/notes/data/models/note_model.dart' as _i15;
-import 'package:personal_finance/notes/presentation/pages/note_screen.dart'
+import 'package:personal_finance/features/notes/data/models/note_model.dart' as _i15;
+import 'package:personal_finance/features/notes/presentation/pages/note_screen.dart'
     as _i9;
-import 'package:personal_finance/notes/presentation/pages/notes_screen.dart'
+import 'package:personal_finance/features/notes/presentation/pages/notes_screen.dart'
     as _i8;
-import 'package:personal_finance/profile/presentation/pages/profile_page.dart'
+import 'package:personal_finance/features/profile/presentation/pages/profile_page.dart'
     as _i10;
-import 'package:personal_finance/signup/presentation/pages/signup_page.dart'
+import 'package:personal_finance/features/signup/presentation/pages/signup_page.dart'
     as _i7;
-import 'package:personal_finance/statistics/presentation/pages/Statistics.dart'
+import 'package:personal_finance/features/statistics/presentation/pages/Statistics.dart'
     as _i1;
-import 'package:personal_finance/stock_rest/presentation/pages/stock_page.dart'
+import 'package:personal_finance/features/stock_rest/presentation/pages/stock_page.dart'
     as _i4;
 
 abstract class $AppRouter extends _i13.RootStackRouter {

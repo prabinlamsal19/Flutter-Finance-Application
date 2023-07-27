@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:personal_finance/signup/presentation/bloc/sign_in_bloc.dart';
+import 'package:personal_finance/features/signup/presentation/bloc/sign_in_bloc.dart';
 
 void main() {
   late SignInBloc signInBloc;

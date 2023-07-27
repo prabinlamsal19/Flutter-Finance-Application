@@ -69,6 +69,7 @@ dependencies:
   user_repository:
     path: packages/user_repository
   path_provider: ^2.0.15
+  get_it: ^7.6.0
   
 dev_dependencies:
   flutter_test:
