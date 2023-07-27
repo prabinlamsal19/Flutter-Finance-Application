@@ -42,6 +42,7 @@ dependencies:
   flutter_secure_storage:
   rxdart:
   dio:
+  hydrated_bloc:
   hive:
   hive_flutter:
   json_annotation:
@@ -51,20 +52,28 @@ dependencies:
   # authentication_repository:
   formz:
   uuid:
+  hooks_riverpod:
+  freezed_annotation:
+  flutter_hooks:
+  ferry_flutter:
+  lazy_load_scrollview:
   image_picker:
   file_picker:
   graphql_flutter: ^5.1.2
   flutter_fast_forms:
   path:
   sqflite:
+  ferry: 
+  gql_http_link:
+  ferry_hive_store:
   user_repository:
     path: packages/user_repository
   path_provider: ^2.0.15
+  get_it: ^7.6.0
   
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -82,14 +91,19 @@ dev_dependencies:
   hive_generator:
   flutter_riverpod:
   bloc_test:
+  flutter_launcher_icons:
+  ferry_generator:
   # image_picker_web:
+flutter_launcher_icons: 
+  android: "launcher-icon"
+  ios: true 
+  image_path: "assets/app_logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
