@@ -17,6 +17,7 @@ Future<void> main() async {
     final binding = WidgetsFlutterBinding.ensureInitialized();
     FlutterNativeSplash.preserve(widgetsBinding: binding);
     await bootstrap(
+        createEnv: () => Env.instance.createEnv(DevelopmentEnv()),
         builder: () => ProviderScope(overrides: [
               ferryClientProvider.overrideWithValue(GetIt.instance<Client>())
             ], child: MyApp()));

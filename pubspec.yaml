@@ -72,6 +72,7 @@ dependencies:
   get_it: ^7.6.0
   flutter_native_splash:
   logger: ^2.0.1
+  envied: ^0.3.0+3
 
 dev_dependencies:
   flutter_test:
@@ -95,6 +96,7 @@ dev_dependencies:
   bloc_test:
   flutter_launcher_icons:
   ferry_generator:
+  envied_generator: ^0.3.0+3
   # image_picker_web:
 flutter_launcher_icons:
   android: "launcher-icon"

@@ -18,9 +18,8 @@ import 'features/stock_rest/data/models/stock_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get_it/get_it.dart';
 
-Future<void> bootstrap({
-  required Widget Function() builder,
-}) async {
+Future<void> bootstrap(
+    {required Widget Function() builder, required Function() createEnv}) async {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +35,8 @@ Future<void> bootstrap({
   await hiveService.init();
   final client = await ferryService.initClient();
   GetIt.instance.registerSingleton<Client>(client);
+
+  await createEnv();
 
   runApp(builder());
 }
