@@ -1,9 +1,10 @@
 import 'package:ferry/ferry.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:personal_finance/features/stock_rest/presentation/pages/stock_page.dart';
-import 'app.dart';
+import 'app/app.dart';
 import 'config/routes/routes_imports.dart';
 import 'features/add_transaction/domain/repositories/darkModeProvider.dart';
 import 'features/add_transaction/presentation/bloc/transaction_bloc.dart';
@@ -20,6 +21,8 @@ import 'package:get_it/get_it.dart';
 Future<void> bootstrap({
   required Widget Function() builder,
 }) async {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
   WidgetsFlutterBinding.ensureInitialized();
   //hive
   await Hive.initFlutter();
