@@ -17,13 +17,14 @@ import '../../person/graphql/__generated__/people.req.gql.dart' show GPeopleReq;
 import '../../person/graphql/__generated__/people.var.gql.dart'
     show GPeopleVars;
 
-import 'package:gql_code_builder/src/serializers/operation_serializer.dart'
-    show OperationSerializer;
+// import 'package:gql_code_builder/src/serializers/operation_serializer.dart'
+//     show OperationSerializer;
+// import 'package:gql_code';
 
 part 'serializers.gql.g.dart';
 
 final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
-  ..add(OperationSerializer())
+  // ..add(OperationSerializer())
   ..addPlugin(StandardJsonPlugin());
 @SerializersFor([
   GPeopleData,
