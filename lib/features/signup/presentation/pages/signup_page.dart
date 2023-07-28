@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:personal_finance/src/core/base/env.dart';
 
 import '../../../../config/routes/routes_imports.gr.dart';
 import '../../data/models/user_model.dart';
@@ -35,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
     return Scaffold(
       body: Stack(children: [
         Image.asset(
-          "assets/bgg.jpeg",
+          Env.instance.authImageUrl,
           height: MediaQuery.of(context).size.height,
           fit: BoxFit.cover,
         ),

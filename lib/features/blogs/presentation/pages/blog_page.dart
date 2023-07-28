@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:personal_finance/features/blogs/presentation/pages/personal_blog/personal_blogs.dart';
 import 'package:personal_finance/features/blogs/presentation/pages/graphql_blog/rest_blog.dart';
 
-import '../../../graphql_blogs/pages/people_page.dart';
-
+import '../../../../graphql_blogs/pages/people_page.dart';
 
 @RoutePage()
 class BlogPage extends StatefulWidget {

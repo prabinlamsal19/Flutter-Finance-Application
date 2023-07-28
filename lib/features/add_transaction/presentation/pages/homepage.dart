@@ -40,7 +40,7 @@ class HomePageState extends ConsumerState<HomePage>
         PieChartScreenRoute(),
         const StocksPageRoute(),
         const BlogPageRoute(),
-        const ProfilePageRoute(),
+        ProfilePageRoute(),
       ],
       builder: (context, child, controller) {
         final tabsRouter = AutoTabsRouter.of(context);

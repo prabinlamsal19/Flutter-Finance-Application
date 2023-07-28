@@ -5,4 +5,5 @@ targets:
         enabled: true
         generate_for:
           include:
-            - lib/env.dart
+            - /lib 
+            
