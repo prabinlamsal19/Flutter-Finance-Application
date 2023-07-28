@@ -4,6 +4,7 @@ part of 'routes_imports.dart';
 class AppRouter extends $AppRouter {
   @override
   RouteType get defaultRouteType => const RouteType.material();
+
   @override
   final List<AutoRoute> routes = [
     AutoRoute(page: SignupPageRoute.page, path: "/", initial: true),
