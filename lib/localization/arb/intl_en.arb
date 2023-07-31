@@ -1,0 +1,371 @@
+{
+  "@@locale": "en",
+  "appname":"EML",
+  "skip":"Skip",
+  "onboardingFirst":"Workers’ compensation made easy",
+  "onboardingSecond":"Track your payments, appointments, and approvals",
+  "onboardingThird":"Upload your documents and access helpful resources",
+  "capitalizedRegister":"REGISTER",
+  "termsAndConditionsHeading":"Please read our terms and conditions",
+  "agreeAndContinue":"Agree and continue",
+  "claims":"CLAIMS",
+  "claimsTopText":"Select a claim number to view more information",
+  "claimsDialogHeader":"No active claims",
+  "claimsDialogBody":"There are no active claims associated with this account",
+  "claimstooltipBody":"CLOSED claims will be shown for 60 days post claim is closed. Your account will be active for 90 days post claim is closed.",
+  "claimsOverviewDialogHeader":"Liability status",
+  "claimsOverviewtooltipBody":"Please be aware the liability status is displayed 3 business days following the date of decision to allow time for formal communication.",
+  "addClaimsNumber":"Add claim number",
+  "dashboard": "Dashboard",
+  "claimNumber":"Claim number",
+  "lastName":"Last name",
+  "mobileNumber":"Mobile number",
+  "dateOfBirth":"Date of birth",
+  "register":"Register",
+  "login":"Login",
+  "setPin":"Set a new PIN",
+  "repeatPin":"Repeat PIN to continue",
+  "loginWithPin":"Login with PIN",
+  "home":"Home",
+  "payments":"Payments",
+  "certificate":"Certificate",
+  "more":"More",
+  "confirm":"Confirm",
+  "addFingerPrintRegistration":"Do you want to use Touch ID for login?",
+  "addFaceIdRegistration":"Do you want to use Face ID for login?",
+  "loginFingerPrint":"Login with Touch ID",
+  "loginFaceId":"Login with Face ID",
+  "touchId":"Touch ID",
+  "addTouchId":"Add Touch ID",
+  "pinLogin":"Pin Login",
+  "faceId":"Login with Face ID",
+  "addFaceId":"Add Face ID",
+  "skipNow":"Skip for now",
+  "noRobot":"I am not a robot",
+  "lastNameHint":"Enter your last name",
+  "claimNoHint":"Enter your claim number",
+  "mobileNoHint":"Enter your mobile number",
+  "dobHint":"DD-MM-YYYY",
+  "otpCode":"OTP Code",
+  "inputCodeTitle":"Please input the code sent to",
+  "resendOtp":"Resend OTP",
+  "enterOTP":"Please enter 6 digit OTP code",
+  "termsAndPrivacy":"By selecting you agree to our",
+  "termsAndPrivacyText":"terms, condition and privacy policy",
+  "noBioMetricSupport":"Device does not support Biometric login",
+  "biometricAuthCancelled":"Auth Cancelled",
+  "otpRequired":"OPT is required",
+  "invalidMobileNumber":"Invalid mobile number",
+  "invalidDob":"'Invalid Date of birth",
+  "lastNameValidation":"Last name is required",
+  "claimNumberValidation":"Claim number is required",
+  "dobValidation":"DOB is required",
+  "twoMinPinValidationMessage":"Please wait 2 sec before trying the pin",
+  "fiveMinPinValidationMessage":"Please wait 5 sec before trying the pin",
+  "invalidPinCode":"Invalid pin code",
+  "noInternet":"No Internet Connection",
+  "unAuthorizedAccess":"UnAuthorized Access",
+  "pinCodeMisMatched":"Pin code mismatched",
+  "pinCodeValidation":"Pin code is required field",
+  "emptyOTPValidation":"Please enter 6 digit OTP code",
+  "invalidOTPCode":"Invalid OTP code",
+  "medicalRequestsAndReferals":"Medical requests & referrals",
+  "caseManager":"Case manager",
+  "videosArticlesPodcasts":"Videos, articles & podcasts",
+  "downloadForms":"Download forms",
+  "notifications":"Notifications",
+  "myProfile":"My profile",
+  "faq":"FAQ’s",
+  "submit":"Submit",
+  "close":"Close",
+  "selectAClaim":"Select a claim",
+  "enableFaceId":"Enable Face-ID",
+  "enableTouchId":"Enable Touch-ID",
+  "lightMode":"Light mode",
+  "notificationSettings":"Notification settings",
+  "termsConditionsAndPrivacy":"Terms conditions and privacy",
+  "logout":"Logout",
+  "logoutBody":"Do you want to Logout? ",
+  "rememberMe":"Remember me",
+    "resendOtpTimer":"Resend OTP after {timer} seconds",
+    "@resendOtpTimer":{
+    "description": "Message displayed for request otp timer",
+     "placeholders": {
+        "timer": {
+              "type": "int"
+         }
+       }
+      },
+  "uploadNewCertificate":"Upload new Certificate",
+  "enterClaimNumber":"Enter claim number",
+  "addClaimSuccessMessage":"Claim added successfully",
+  "darkMode":"Dark mode",
+  "invalidClaimNumber":"Claim number must be alphanumeric only",
+  "resetPin":"Reset Pin",
+  "resetPinDialogBody":"Do you want to reset your pin?",
+
+  "emptyClaimNumber":"Please enter the claim number",
+  "liabilityStatus":"Liability status {status}",
+  "@liabilityStatus": {
+    "description": "Defines the current liability status",
+    "placeholders": {
+      "status": {
+        "type": "String" 
+      }
+    }
+  },
+  "claimNumberStatus":"Claim number {number}",
+  "@claimNumberStatus": {
+    "description": "States the current claim number",
+    "placeholders": {
+      "number": {
+        "number": "String" 
+      }
+    }
+  },
+  "userGreetings":"Hi {userName}",
+  "@userGreetings":{
+    "description":"Greeting to display to the user in home page",
+    "placeholders":{
+      "userName":{
+        "type":"String"
+      }
+    }
+  },
+  
+  "mostRecentPayment":"Most recent payment",
+  "workersCompensationCertificate":"Workers Compensation Certificate",
+  "mostRecentMedicalApproval":"Most recent medical approval",
+  "callCaseManager":"Call case manager",
+  "callNow":"Call now",
+  "termsAndConditionPrefix":"By selecting you agree to our ",
+  "termsAndConditionSuffix":"term conditions and privacy.",
+  "emptyProfileDetail":"Your profile has not been set.",
+  "name":"Name",
+  "homePhone":"Home phone",
+  "phone":"Phone",
+  "workNumber":"Work number",
+  "emai":"Email",
+  "postalAddress":"Postal address",
+  "profilePageBottomText":"Please contact your case manager to update your details.",
+  "videos":"Video",
+  "articles":"Articles",
+  "podcasts":"Podcast",
+  "expires":"Expires {date}",
+  "@expires":{
+    "description":"Expiry date of compensation certificate",
+    "placeholders":{
+      "date":{
+        "type":"String"
+      }
+    }
+  },
+  "upload":"Upload",
+  "medicalTravelReimbrushment":"Medical/Travel reimbursement",
+  "WorkersCompensationCertificate":"Workers’ Compensation Certificate",
+  "medicalRequestsReferrals":"Medical requests/Referrals",
+  "serverError":"Server Error",
+  "emptyVideoText":"There are no any video available.",
+  "medicalReferralsTooltipBodyText":"Approvals displayed for the last 3 months only.",
+  "medicalRequests":"Medical requests",
+  "andReferrals":"& referrals",
+  "uploadTreatmentReqest":"Upload treatment request",
+  "approvedMedicalRequests":"Approved medical requests",
+  "lastUpdated":"Last updated {date}",
+  "@lastUpdated":{
+    "description":"Last time the medical request was updated.",
+    "placeholders":{
+      "date":{
+        "type":"String"
+      }
+    }
+  },
+  "uploadFromCamera":"Take a photo",
+  "uploadFromPhone":"Select file from phone",
+  "uploadFromGallery":"Add a photo from library/gallery",
+  "uploadInformation":"Uploading documents are secure to EML",
+  "document":"Document",
+  "uploadToEml":"Upload to EML",
+  "retake":"Retake",
+  "addComment":"Add a comment",
+  "commentInfo":"Comment only required for further details",
+  "addAnother":"Add another",
+  "na":"N/A",
+  "emptyMedicalRequest":"You do not have any medical request.",
+  "ok":"Ok",
+  "error":"Error",
+  "paymentFilter":"Last {noOfDays} days",
+  "@paymentFilter":{
+  "description":"No of days to filter the record of payments.",
+  "placeholders":{
+      "noOfDays":{
+        "type":"String"
+
+      }
+    } 
+  },
+  "paymentTooltip":"No direct payments from your Employer are displayed here. Only direct payments from EML are displayed here. Depending on your nominated banking institution, please allow for processing times.",
+  "@paymentTooltip":{
+    "description":"Tooltip shown when clikced on the info icon of payment page"
+  },
+  "description":"Description",
+  "netAmount":"Net Amount",
+  "welcomeNoteExpiryText":"Your certificate of capacity is expiring in 8 days",
+  "workerCompensation":"Workers Compensation",
+  "workerCompensationTooltipBodyText":"Please ensure your workers compensation certificate is current and valid so that there are no interruptions to your payments.",
+  "call":"Call",
+  "mostRecentCertificates":"Most recent Certificates",
+  "emptyCoc":"There is no any certificates.",
+  "certificatesFetchingErrorMessage":"Error fetching certificates!",
+  "issued":"Issued",
+  "validFrom":"Valid from",
+  "to":"to",
+  "partialCapacity":"Partital Capacity",
+  "preInjuriedDuties":"Pre injuried duties",
+  "thirty":"30",
+  "sixty":"60",
+  "ninety":"90",
+  "uploading":"Uploading Docs...",
+  "fileUploadedSuccess":"Success",
+  "fileUploadFailed":"Error on upload",
+  "emptyActiveClaimsOverview":"Current active claim not available!",
+  "documentUpload":"Document Upload",
+  "certificateOfCapacity":"Certificate of capacity sent to EML",
+  "isWorking":"Are you currently undertaking any work?",
+  "yes":"Yes",
+  "no":"No",
+  "continueBtn":"Continue",
+  "chooseOption":"Choose Option",
+  "camera":"Camera",
+  "phoneAndFile":"Phone/File",
+  "gallery":"Gallery",
+  "confirmAnswer":"Please select and confirm your answer",
+  "daysLeft":"{days} days left",
+  "noDataReceived":"No data received",
+  "@daysLeft":{
+    "description":"Number of days left before expiration",
+    "placeholders":{
+      "days":{
+        "type":"String"
+      }
+    }
+  },
+  "surgery":"Surgery",
+  "rehabilitationservices":"Rehabilitation Services",
+  "medicalTreatment":"Medical Treatment",
+  "claimsTitle":"Claims",
+  "noItems":"No items to display",
+  "paymentType":"Payment type",
+  "totalPayment":"Total payment",
+  "paymentDate":"Payment date",
+  "paymentMethod":"Payment method",
+  "subPayments":"Sub payments",
+  "period":"Period",
+  "paymentsDetail":"Payment detail",
+  "reimbursement":"Reimbursement",
+  "uploadReimbursementRequest":"Upload reimbursement request",
+  "certificateDetail":"Certificate detail",
+  "issueDate":"Issue date",
+  "validTo":"Valid to",
+  "nextReviewDate":"Next review date",
+  "certificateType":"Certificate type",
+  "allowedWork":"Allowed work",
+  "capacity":"Capacity",
+  "liftingCarryingCapacity":"Lifting/carrying capacity",
+  "sittingTolerance":"Sitting tolerance",
+  "standingTolerance":"Standing tolerance",
+  "pushingPullingAbility":"Pushing/pulling ability",
+  "bendingTwistingSquattingAbility":"Bending/Twisting/Squating ability",
+  "drivingAbility":"Driving ability",
+  "other":"Other",
+  "viewMore":"View more",
+  "downloadYourCertificate":"Download your certificate",
+  "allowedWorkForADay":"max {hour} hours day",
+  "@allowedWorkForADay":{
+    "description":"Max amount of hours allowed to work in a day.",
+    "placeholders":{
+      "hour":{
+        "type":"String"
+      }
+    }
+  },
+  "allowedWorkForAWeek":"max {days} days week",
+  "@allowedWorkForAWeek":{
+    "description":"Max amount of days allowed to work in a week.",
+    "placeholders":{
+      "days":{
+        "type":"String"
+      }
+    }
+  },
+  "viewLess":"View less",
+  "uploadANewCertificate":"Upload a new Certificate",
+  "emptyCertificates":"There is no any certificates.",
+  "appointmentToolTip":"It is mandatory to attend EML Scheduled appointments to ensure no interruptions to your benefits.",
+  "emptyAppointment":"You do not have appointment.",
+  "addToCalendar":"Add to calendar",
+  "addAppointment":"Add appointment",
+  "editAppointment":"Edit appointment",
+  "scheduledAppointment":"Scheduled appointments",
+  "myAppointment":"My appointments",
+  "appointments":"Appointments",
+  "emailNow": "Email now",
+  "time":"Time",
+  "timeHint":"Pick appointment time",
+  "date":"Date",
+  "dateFieldHint":"YYYY-MM-DD",
+  "provider":"Provider",
+  "providerHint":"Enter provider name",
+  "treatmentType":"Type",
+  "treatmentTypeHint":"Enter treatment type",
+  "address":"Address",
+  "addressHint":"Enter provider address",
+  "treatingDoctor":"Treating doctor",
+  "getDirections":"Get directions",
+  "enterDate":"Please enter date",
+  "enterTime":"Please enter time",
+  "enterTreatment":"Please enter treatment type",
+  "enterProviderName":"Please enter provider name",
+  "enterProviderAddress":"Please enter provider address",
+  "deleteEvent":"Delete event",
+  "deleting":"Deleting...",
+  "success":"Success",
+  "appointmentAdded":"Appointment added in the calendar",
+  "appointmentCreated":"Appointment created successfully",
+  "errorAppointmentAdd":"Unable to add appointment in the calendar",
+  "appointmentEdited":"Your appointment is updated successfully",
+  "emptyScheduledAppointment":"You do to have scheduled appointments",
+  "emptyForms": "You do not have any forms."
+,
+  "emptyArticles":"You do not have any articles.",
+  "videoDuration": "{duration} min",
+  "@videoDuration":{
+    "description":"Duration of videos",
+    "placeholders":{
+      "duration":{
+        "type":"String"
+      }
+    }
+  },
+  "read":"Read",
+  "fullScreen": "Full Screen",
+  "appointmentWith":"Appointment with",
+  "videosArticlesPodcastsTitle":"Videos, articles &\npodcasts",
+  "calendarPermission":"Please allow calendar permission from the setting",
+  "permission":"Calendar Permission",
+  "appointmentDeleted":"Appointment deleted successfully",
+  "videoQuality":"{quality}p",
+  "@videoQuality":{
+    "description":"Quality of video.",
+    "placeholders":{
+      "quality":{"type":"int"}
+    }
+  },
+  "delete" : "Delete",
+  "deleteAccount" : "Delete Account",
+  "deleteAccountBody" : "Are you sure you want to delete your account?",
+  "deleteAccountSuccess" : "Account Deleted Successfully",
+  "deleteAccountError" : "Delete Account Failed",
+  "uploadError":"Upload Error",
+  "fileSizeInfo":"Please upload documents less than 20MB in size"
+}
