@@ -73,6 +73,7 @@ dependencies:
   flutter_native_splash:
   logger: ^2.0.1
   envied: ^0.3.0+3
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +85,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
   auto_route_generator:
+  injectable_generator:
   build_runner:
   very_good_analysis:
   mocktail:
@@ -96,6 +98,7 @@ dev_dependencies:
   flutter_launcher_icons:
   ferry_generator:
   envied_generator: ^0.3.0+3
+  injectable: ^2.1.2
   # image_picker_web:
 flutter_launcher_icons:
   android: "launcher-icon"

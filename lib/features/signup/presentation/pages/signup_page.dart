@@ -1,11 +1,15 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
+import 'package:personal_finance/features/signup/domain/signup_repository.dart';
 import 'package:personal_finance/src/core/base/env.dart';
+import 'package:personal_finance/src/core/di/injector.dart';
+import 'package:user_repository/user_repository.dart';
 
 import '../../../../config/routes/routes_imports.gr.dart';
 import '../../data/models/user_model.dart';
-import '../../data/repository/signup_repo.dart';
+import '../../data/repository/signup_repo_impl.dart';
 import '../bloc/sign_in_bloc.dart';
 import '../cubits/cubit/pw_cubit.dart';
 
@@ -179,10 +183,6 @@ class _SignupPageState extends State<SignupPage> {
                                       const Color.fromARGB(255, 85, 86, 171),
                                   suffixIcon: GestureDetector(
                                     onTap: () {
-                                      // setState(() {
-                                      //   hideShowConfirmPassword =
-                                      //       !hideShowConfirmPassword;
-                                      // });
                                       if (confirmPwIcon == false) {
                                         BlocProvider.of<ConfirmPwCubit>(context)
                                             .showConfirmPassword();
@@ -216,7 +216,7 @@ class _SignupPageState extends State<SignupPage> {
                               password: passwordController.text,
                               email: "prabin.lamsal@ebpearls.com");
 
-                          signUp(signedUpUser);
+                          var response = getIt<SignupRepository>();
                           //send this usermodel to the repository for signing up
 
                           // names.add(nameController.text);

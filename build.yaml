@@ -5,5 +5,4 @@ targets:
         enabled: true
         generate_for:
           include:
-            - /lib 
             
