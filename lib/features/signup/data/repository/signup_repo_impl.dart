@@ -9,6 +9,7 @@ import '../models/user_model.dart';
 
 @LazySingleton(as: SignupRepository)
 class SignupRepositoryImpl implements SignupRepository {
+  @override
   EitherResponse<Response<dynamic>> signUp(UserModel user) async {
     String url = 'http://10.0.2.42:8800/api/auth/register';
 

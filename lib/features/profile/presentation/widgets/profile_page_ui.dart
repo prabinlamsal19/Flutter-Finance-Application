@@ -3,10 +3,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:personal_finance/config/routes/routes_imports.gr.dart';
 import 'package:personal_finance/features/profile/presentation/bloc/profile_info_bloc/profile_info_bloc.dart';
 import 'package:personal_finance/features/profile/presentation/widgets/profile_info_tile.dart';
 
+import '../../../../config/routes/routes_imports.gr.dart';
 import '../../data/models/profile_model.dart';
 
 class ProfileUI extends StatefulWidget {

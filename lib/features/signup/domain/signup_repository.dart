@@ -10,6 +10,4 @@ import '../data/models/user_model.dart';
 
 abstract class SignupRepository {
   EitherResponse<Response<dynamic>> signUp(UserModel user);
-
-  EitherResponse<Response<dynamic>> isSignedIn(UserModel user);
 }
