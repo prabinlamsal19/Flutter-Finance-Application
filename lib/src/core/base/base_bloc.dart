@@ -1,9 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:eml/src/core/di/injector.dart';
-import 'package:eml/src/core/errors/app_error.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../localization/localization.dart';
+import '../errors/app_error.dart';
 
 //// Mixin to handle success and error state of the Cubit/Bloc
 abstract class BaseCubit<State> extends Cubit<State> {

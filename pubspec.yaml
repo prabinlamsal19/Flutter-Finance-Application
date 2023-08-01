@@ -169,6 +169,3 @@ flutter_intl:
   main_locale: en
   arb_dir: lib/localization/arb
   output_dir: lib/localization/generated
-
-flutter_gen:
-  output: lib/gen/
