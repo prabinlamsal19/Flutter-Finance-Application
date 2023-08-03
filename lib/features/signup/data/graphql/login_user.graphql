@@ -1,0 +1,10 @@
+mutation LoginUser($email: String!, $password: String!) {
+  validateUser(loginData: {
+    email: $email,
+    password: $password
+  }) {
+    username
+    email
+    access_token
+  }
+}

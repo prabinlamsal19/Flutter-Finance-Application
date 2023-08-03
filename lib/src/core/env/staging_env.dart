@@ -5,7 +5,7 @@ import '../constants/env_keys.dart';
 
 part 'staging_env.g.dart';
 
-@Envied(name: EnvKeys.devEnv, path: EnvKeys.devEnvPath)
+@Envied(name: EnvKeys.stageEnv, path: EnvKeys.stageEnvPath)
 class StagingEnv extends EnvVars {
   @override
   @EnviedField(varName: EnvKeys.authImageUrlKey)

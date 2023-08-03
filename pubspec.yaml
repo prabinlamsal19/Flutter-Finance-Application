@@ -102,21 +102,22 @@ dev_dependencies:
   ferry_generator:
   envied_generator: ^0.3.0+3
   injectable: ^2.1.2
+  flutter_gen:
   # image_picker_web:
 flutter_launcher_icons:
   android: "launcher-icon"
   ios: true
   image_path: "assets/app_logo.png"
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+  # For information on the generic Dart part of this file, see the
+  # following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
-flutter:
+  # The following section is specific to Flutter packages.
+  flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
+  uses-material-design: true #---------------------
   generate: true
 
   # To add assets to your application, add an assets section, like this:
