@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:personal_finance/features/stock_rest/presentation/pages/stock_page.dart';
+import 'package:personal_finance/src/core/di/injector.dart';
 import 'app/app.dart';
 import 'config/routes/routes_imports.dart';
 import 'features/add_transaction/domain/repositories/darkModeProvider.dart';
@@ -38,6 +39,8 @@ Future<void> bootstrap(
   GetIt.instance.registerSingleton<Client>(client);
 
   await createEnv();
+
+  await configureInjection();
 
   runApp(builder());
 }

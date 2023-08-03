@@ -1,8 +1,11 @@
 targets:
   $default:
     builders:
-      envied_generator|envied_builder:
+      ferry_generator|graphql_builder:
         enabled: true
-        generate_for:
-          include:
-            
+        options:
+          schema: personal_finance|lib/schema/schema.graphql
+      ferry_generator|serializer_builder:
+        enabled: true
+        options:
+          schema: personal_finance|lib/schema/schema.graphql
