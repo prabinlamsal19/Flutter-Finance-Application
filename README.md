@@ -1,6 +1,17 @@
 # personal_finance
 
-A new Flutter project.
+Tech Stack used(Flutter): 
+- BLoC and Riverpod for state management
+- Clean architecture(+folder structure)
+- Singleton/Factory pattern for databses and repostories
+- Dependency Injection with BLoC , riverpod and getit (serviceLocator)
+- Hive, SQFlite, and flutter_secure_storage for local storage
+- REST api integration
+- GraphQL integration with ferry graphql and also with regular GraphQLProvider.
+- Autoroutes for navigation
+- Unit testing + BLoC testing implemented
+  and many more.
+
 
 ## Getting Started
 
