@@ -1,5 +1,15 @@
 # personal_finance
 
+Features: 
+- Authentication(local+remote)
+- Transaction management
+- Analytics
+- Stock Page
+- Blogs
+- Post creation
+- Profile
+
+
 Tech Stack used(Flutter): 
 - BLoC and Riverpod for state management
 - Clean architecture(+folder structure)
@@ -10,6 +20,7 @@ Tech Stack used(Flutter):
 - GraphQL integration with ferry graphql and also with regular GraphQLProvider.
 - Autoroutes for navigation
 - Unit testing + BLoC testing implemented
+- Localization, development flavors and bootstraping
   and many more.
 
 
