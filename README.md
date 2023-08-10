@@ -8,12 +8,13 @@ Features:
 - Blogs
 - Post creation
 - Profile
+- Keep notes.
 
 
 Tech Stack used(Flutter): 
 - BLoC and Riverpod for state management
 - Clean architecture(+folder structure)
-- Singleton/Factory pattern for databses and repostories
+- Singleton/Factory pattern for databses and repostories(+repository pattern)
 - Dependency Injection with BLoC , riverpod and getit (serviceLocator)
 - Hive, SQFlite, and flutter_secure_storage for local storage
 - REST api integration
