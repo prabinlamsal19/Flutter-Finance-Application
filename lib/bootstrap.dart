@@ -23,7 +23,6 @@ import 'graphql_blogs/utils/hive_service.dart';
 Future<void> bootstrap(
     {required Widget Function() builder, required Function() createEnv}) async {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-
   WidgetsFlutterBinding.ensureInitialized();
   //hive
   await Hive.initFlutter();
