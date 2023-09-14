@@ -38,7 +38,6 @@ Future<void> bootstrap(
   GetIt.instance.registerSingleton<Client>(client);
 
   await createEnv();
-
   await configureInjection();
 
   runApp(builder());
